@@ -120,8 +120,10 @@ SWIFT_CLASS("_TtC5adhoc18ChatViewController")
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified messageText;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified userLavel;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified topButton;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified sendButton;
 - (void)viewDidLoad;
 - (IBAction)topButtonDown:(id __nonnull)sender;
+- (IBAction)sendButtonDown:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

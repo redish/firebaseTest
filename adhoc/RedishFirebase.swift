@@ -82,7 +82,9 @@ private class RedishFirebaseCore {
     func startMonitor(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.Value, withBlock: { snapshot in
-            call(snapshot)
+            if self.convertSnapshot(snapshot) != nil {
+                call(snapshot)
+            }
         })
     }
     
@@ -90,7 +92,9 @@ private class RedishFirebaseCore {
     func startMonitorToAdded(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildAdded, withBlock: { snapshot in
-            call(snapshot)
+            if self.convertSnapshot(snapshot) != nil {
+                call(snapshot)
+            }
         })
     }
     
@@ -98,7 +102,9 @@ private class RedishFirebaseCore {
     func startMonitorToUpdate(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildChanged, withBlock: { snapshot in
-            call(snapshot)
+            if self.convertSnapshot(snapshot) != nil {
+                call(snapshot)
+            }
         })
     }
     
@@ -138,6 +144,13 @@ private class RedishFirebaseCore {
         e.hnd = nil
     }
     
+    // snapshotのNSNull対応.
+    private func convertSnapshot( snapshot:FIRDataSnapshot! ) -> FIRDataSnapshot! {
+        if ((snapshot.value?.isKindOfClass(NSNull))==true) {
+            return nil
+        }
+        return snapshot
+    }
 }
 
 // コアメソッド.
@@ -241,7 +254,7 @@ class FirebaseByRedishUserApps {
         // 別の監視条件が存在する場合は、クリア.
         if self.merchantUserId != -1 {
             if self.merchantUserId != merchantUserId {
-                endMonitor()
+                stopMonitor()
             }
             else {
                 return;
@@ -264,7 +277,7 @@ class FirebaseByRedishUserApps {
     }
     
     // 対象スタッフIDのルーム監視終了.
-    func endMonitor() {
+    func stopMonitor() {
         _ = AutoSync( self )
         
         let e:RedishFirebaseElement! = self.messages

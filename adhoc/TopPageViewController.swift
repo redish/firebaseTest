@@ -18,17 +18,17 @@ class TopPageViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        room1_label.text = "メッセージなし"
+        room2_lavel.text = "メッセージなし"
         
         // 生成されていない場合処理.
         if !redishFirebase.isCreate() {
             
             // 生成＋ユーザ情報の監視.
             redishFirebase.create( userId,limit:1,call: { snapshot in
-                let value:AnyObject? = snapshot.value
-                if value != nil {
-                    print( "#####\(value):\(value != nil)" )
-                    let room:String! = value!.objectForKey("room") as! String
-                    let lastMessage:String! = value!.objectForKey("last_message") as! String
+                if let value:AnyObject! = snapshot.value!,
+                    room = value.objectForKey("room") as? String,
+                    lastMessage = value.objectForKey("last_message") as? String {
                     if room == "u1_mu1" {
                         self.room1_label.text = lastMessage
                     } else if room == "u1_mu2" {
@@ -54,12 +54,12 @@ class TopPageViewController : UIViewController {
         moveRoom()
     }
     
+    // ルーム移動.
     private func moveRoom() {
         
         // ルーム作成.
         // 本来はここでなく、新しくチャットを開始する時に実施する。
         redishFirebase.createRoom(merchantUserId)
-        
     }
     
 }

@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-jh-1Q1" userLabel="messageTextField">
-                                <rect key="frame" x="10" y="344" width="356" height="30"/>
+                                <rect key="frame" x="10" y="344" width="223" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -88,6 +88,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-kP-XFz">
+                                <rect key="frame" x="10" y="9" width="150" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lue-w2-c58">
                                 <rect key="frame" x="165" y="9" width="201" height="54"/>
                                 <color key="backgroundColor" red="0.4328769700581781" green="0.55386757038026768" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,17 +103,20 @@
                                     <segue destination="ZEM-xv-eZo" kind="show" id="Vom-fX-CW0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-kP-XFz">
-                                <rect key="frame" x="10" y="9" width="150" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-cg-yaB">
+                                <rect key="frame" x="242" y="343" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.9454505997474747" green="0.85556465670397552" blue="0.93244836078972315" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="sendButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="g3a-ts-cYj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51687956364519538" green="0.60000002384185791" blue="0.48835103511354461" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="messageText" destination="cpf-jh-1Q1" id="i7m-Ia-mUF"/>
+                        <outlet property="sendButton" destination="d7p-cg-yaB" id="K9I-WD-ZYZ"/>
                         <outlet property="textView" destination="grd-NZ-wzP" id="DSr-VG-kZW"/>
                         <outlet property="topButton" destination="lue-w2-c58" id="dOp-8e-Lfb"/>
                         <outlet property="userLavel" destination="Awg-kP-XFz" id="SR0-bx-Exa"/>
