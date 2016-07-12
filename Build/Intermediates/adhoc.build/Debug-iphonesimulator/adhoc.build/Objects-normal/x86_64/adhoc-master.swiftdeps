@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "6377b1442e5026d06e943ac33a322827"
+build_time: [521634315, 360700000]
+inputs:
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/TopPageViewController.swift": [521634311, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/ChatViewController.swift": [521631385, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/RedishFirebase.swift": [521633335, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/AppDelegate.swift": [521631948, 0]

@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "f0fe584dec24615611f965931f194654"
+build_time: [521547280, 923700000]
+inputs:
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/AppDelegate.swift": [521546111, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/ViewController.swift": [521545739, 0]

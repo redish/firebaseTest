@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZEM-xv-eZo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller first-->
+        <scene sceneID="Bvi-G4-l6u">
+            <objects>
+                <viewController id="ZEM-xv-eZo" userLabel="View Controller first" customClass="TopPageViewController" customModule="adhoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="coz-px-Kzl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oou-4L-fUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15f-BQ-KmL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18w-1q-eMQ">
+                                <rect key="frame" x="20" y="75" width="334" height="125"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrx-Vh-hPl">
+                                <rect key="frame" x="20" y="218" width="334" height="31"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.52275876880000005" blue="0.59706627000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ルーム　u1_mu2">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="room2_u1_mu2_down:" destination="ZEM-xv-eZo" eventType="touchDown" id="KwL-Aq-YjB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5Xt-Kc-1JN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-vJ-Kwm">
+                                <rect key="frame" x="20" y="257" width="334" height="125"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbO-bT-mxB">
+                                <rect key="frame" x="20" y="36" width="334" height="31"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.52275876880751215" blue="0.59706626999222934" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ルーム　u1_mu1">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="room1_u1_mu1_down:" destination="ZEM-xv-eZo" eventType="touchDown" id="zc8-da-uSM"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="D3a-3z-rfp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.929849200223688" green="0.90846768864536098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="room1_label" destination="18w-1q-eMQ" id="R8w-9Z-g57"/>
+                        <outlet property="room1_u1_mu1" destination="pbO-bT-mxB" id="tiR-Wk-AMG"/>
+                        <outlet property="room2_lavel" destination="hYk-vJ-Kwm" id="5F9-j7-NZV"/>
+                        <outlet property="room2_u1_mu2" destination="Yrx-Vh-hPl" id="KOu-s2-76Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpa-KG-6S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="-41"/>
+        </scene>
+        <!--View Controller second-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="View Controller second" customClass="ChatViewController" customModule="adhoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-jh-1Q1" userLabel="messageTextField">
+                                <rect key="frame" x="10" y="344" width="356" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="grd-NZ-wzP" userLabel="textView">
+                                <rect key="frame" x="10" y="71" width="356" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lue-w2-c58">
+                                <rect key="frame" x="165" y="9" width="201" height="54"/>
+                                <color key="backgroundColor" red="0.4328769700581781" green="0.55386757038026768" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="topButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IXd-o9-9ai"/>
+                                    <segue destination="ZEM-xv-eZo" kind="show" id="Vom-fX-CW0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-kP-XFz">
+                                <rect key="frame" x="10" y="9" width="150" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51687956364519538" green="0.60000002384185791" blue="0.48835103511354461" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageText" destination="cpf-jh-1Q1" id="i7m-Ia-mUF"/>
+                        <outlet property="textView" destination="grd-NZ-wzP" id="DSr-VG-kZW"/>
+                        <outlet property="topButton" destination="lue-w2-c58" id="dOp-8e-Lfb"/>
+                        <outlet property="userLavel" destination="Awg-kP-XFz" id="SR0-bx-Exa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="-41"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="D3a-3z-rfp"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+</document>

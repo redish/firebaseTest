@@ -1,0 +1,232 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ChatViewController"
+provides-nominal:
+- "C5adhoc18ChatViewController"
+provides-member:
+- ["C5adhoc18ChatViewController", ""]
+provides-dynamic-lookup:
+- "userLavel"
+- "viewDidLoad"
+- "messageText"
+- "topButton"
+- "textView"
+- "topButtonDown"
+depends-top-level:
+- "UILabel"
+- "UIViewController"
+- "ChatViewController"
+- "UIButton"
+- "UITextView"
+- "UITextField"
+- "AnyObject"
+depends-member:
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "messageText"]
+- ["PSs9AnyObject", "textView"]
+- ["PSs9AnyObject", "topButton"]
+- ["PSs9AnyObject", "topButtonDown"]
+- ["PSs9AnyObject", "userLavel"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "messageText"]
+- ["PSs11CVarArgType", "textView"]
+- ["PSs11CVarArgType", "topButton"]
+- ["PSs11CVarArgType", "topButtonDown"]
+- ["PSs11CVarArgType", "userLavel"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["C5adhoc18ChatViewController", "AnyObject"]
+- ["C5adhoc18ChatViewController", "UIButton"]
+- ["C5adhoc18ChatViewController", "UILabel"]
+- ["C5adhoc18ChatViewController", "UITextField"]
+- ["C5adhoc18ChatViewController", "UITextView"]
+- ["C5adhoc18ChatViewController", "deinit"]
+- ["C5adhoc18ChatViewController", "init"]
+- ["C5adhoc18ChatViewController", "messageText"]
+- ["C5adhoc18ChatViewController", "textView"]
+- ["C5adhoc18ChatViewController", "topButton"]
+- ["C5adhoc18ChatViewController", "topButtonDown"]
+- ["C5adhoc18ChatViewController", "userLavel"]
+- ["C5adhoc18ChatViewController", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "messageText"]
+- ["PSs23CustomStringConvertible", "textView"]
+- ["PSs23CustomStringConvertible", "topButton"]
+- ["PSs23CustomStringConvertible", "topButtonDown"]
+- ["PSs23CustomStringConvertible", "userLavel"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "messageText"]
+- ["PSs9Equatable", "textView"]
+- ["PSs9Equatable", "topButton"]
+- ["PSs9Equatable", "topButtonDown"]
+- ["PSs9Equatable", "userLavel"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "messageText"]
+- ["PSs8Hashable", "textView"]
+- ["PSs8Hashable", "topButton"]
+- ["PSs8Hashable", "topButtonDown"]
+- ["PSs8Hashable", "userLavel"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "messageText"]
+- ["PSo8NSCoding", "textView"]
+- ["PSo8NSCoding", "topButton"]
+- ["PSo8NSCoding", "topButtonDown"]
+- ["PSo8NSCoding", "userLavel"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "messageText"]
+- ["PSo26NSExtensionRequestHandling", "textView"]
+- ["PSo26NSExtensionRequestHandling", "topButton"]
+- ["PSo26NSExtensionRequestHandling", "topButtonDown"]
+- ["PSo26NSExtensionRequestHandling", "userLavel"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UITextView"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "messageText"]
+- ["CSo8NSObject", "textView"]
+- ["CSo8NSObject", "topButton"]
+- ["CSo8NSObject", "topButtonDown"]
+- ["CSo8NSObject", "userLavel"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "messageText"]
+- ["PSo16NSObjectProtocol", "textView"]
+- ["PSo16NSObjectProtocol", "topButton"]
+- ["PSo16NSObjectProtocol", "topButtonDown"]
+- ["PSo16NSObjectProtocol", "userLavel"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "messageText"]
+- ["PSo21UIAppearanceContainer", "textView"]
+- ["PSo21UIAppearanceContainer", "topButton"]
+- ["PSo21UIAppearanceContainer", "topButtonDown"]
+- ["PSo21UIAppearanceContainer", "userLavel"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "messageText"]
+- ["PSo18UIContentContainer", "textView"]
+- ["PSo18UIContentContainer", "topButton"]
+- ["PSo18UIContentContainer", "topButtonDown"]
+- ["PSo18UIContentContainer", "userLavel"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "messageText"]
+- ["PSo18UIFocusEnvironment", "textView"]
+- ["PSo18UIFocusEnvironment", "topButton"]
+- ["PSo18UIFocusEnvironment", "topButtonDown"]
+- ["PSo18UIFocusEnvironment", "userLavel"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UITextView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "messageText"]
+- ["CSo11UIResponder", "textView"]
+- ["CSo11UIResponder", "topButton"]
+- ["CSo11UIResponder", "topButtonDown"]
+- ["CSo11UIResponder", "userLavel"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "messageText"]
+- ["PSo16UIStateRestoring", "textView"]
+- ["PSo16UIStateRestoring", "topButton"]
+- ["PSo16UIStateRestoring", "topButtonDown"]
+- ["PSo16UIStateRestoring", "userLavel"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "messageText"]
+- ["PSo18UITraitEnvironment", "textView"]
+- ["PSo18UITraitEnvironment", "topButton"]
+- ["PSo18UITraitEnvironment", "topButtonDown"]
+- ["PSo18UITraitEnvironment", "userLavel"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UITextView"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "messageText"]
+- ["CSo16UIViewController", "textView"]
+- ["CSo16UIViewController", "topButton"]
+- ["CSo16UIViewController", "topButtonDown"]
+- ["CSo16UIViewController", "userLavel"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "C5adhoc18ChatViewController"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "253e83d2168218b95262e317ff2bbdb9"
