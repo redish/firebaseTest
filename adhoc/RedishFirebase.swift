@@ -82,7 +82,7 @@ private class RedishFirebaseCore {
     func startMonitor(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.Value, withBlock: { snapshot in
-            if self.convertSnapshot(snapshot) != nil {
+            if self.notEmpty(snapshot) != nil {
                 print( "##################startMonitor:\(snapshot)")
                 call(snapshot)
             }
@@ -93,7 +93,7 @@ private class RedishFirebaseCore {
     func startMonitorToAdded(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildAdded, withBlock: { snapshot in
-            if self.convertSnapshot(snapshot) != nil {
+            if self.notEmpty(snapshot) != nil {
                 print( "##################startMonitorToAdded:\(snapshot)")
                 call(snapshot)
             }
@@ -104,7 +104,7 @@ private class RedishFirebaseCore {
     func startMonitorToUpdate(target:FIRDatabaseReference!, limit:UInt, call: (FIRDataSnapshot!) -> Void) -> FIRDatabaseHandle! {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildChanged, withBlock: { snapshot in
-            if self.convertSnapshot(snapshot) != nil {
+            if self.notEmpty(snapshot) != nil {
                 print( "##################startMonitorToUpdate:\(snapshot)")
                 call(snapshot)
             }
@@ -127,6 +127,26 @@ private class RedishFirebaseCore {
         target.child(key).setValue(value)
     }
     
+    // トランザクションによる、カウントを任意の値にセット.
+    func updateValue(ref:FIRDatabaseReference!, values:[String: AnyObject]) {
+        ref.runTransactionBlock({ (currentData:FIRMutableData!) -> FIRTransactionResult in
+            if self.notEmpty(currentData) != nil {
+                var targetData = [String: AnyObject]()
+                if currentData.hasChildren() {
+                    targetData = currentData.value as! [String: AnyObject]
+                }
+                for (k,v) in values {
+                    targetData[k] = v
+                }
+                currentData.value = targetData
+            }
+            else {
+                ref.setValue(values)
+            }
+            return FIRTransactionResult.successWithValue(currentData)
+        })
+    }
+    
     // RedishFirebaseElementの生成.
     func createElement(path:String) -> RedishFirebaseElement! {
         
@@ -147,13 +167,58 @@ private class RedishFirebaseCore {
         e.hnd = nil
     }
     
+    // トランザクションによる、カウントUP.
+    func addCount(ref:FIRDatabaseReference!, target:String) {
+        ref.runTransactionBlock({ (currentData:FIRMutableData!) -> FIRTransactionResult in
+            if self.notEmpty(currentData) != nil {
+                var targetData = [String: AnyObject]()
+                if currentData.hasChildren() {
+                    targetData = currentData.value as! [String: AnyObject]
+                }
+                let value = targetData[target]
+                if value == nil {
+                    targetData[target] = 1
+                }
+                else {
+                    targetData[target] = 1 + Int(value!.description)!
+                }
+                currentData.value = targetData
+            }
+            return FIRTransactionResult.successWithValue(currentData)
+        })
+    }
+    
+    // トランザクションによる、カウントを任意の値にセット.
+    func setCount(ref:FIRDatabaseReference!, target:String, changeValue:Int) {
+        ref.runTransactionBlock({ (currentData:FIRMutableData!) -> FIRTransactionResult in
+            if self.notEmpty(currentData) != nil {
+                var targetData = [String: AnyObject]()
+                if currentData.hasChildren() {
+                    targetData = currentData.value as! [String: AnyObject]
+                }
+                targetData[target] = changeValue
+                currentData.value = targetData
+            }
+            return FIRTransactionResult.successWithValue(currentData)
+        })
+    }
+    
     // snapshotのNSNull対応.
-    private func convertSnapshot( snapshot:FIRDataSnapshot! ) -> FIRDataSnapshot! {
+    private func notEmpty( snapshot:FIRDataSnapshot! ) -> FIRDataSnapshot! {
         //print("ノードの値が変わりました！: \(snapshot.value?.description)")
         if ((snapshot.value?.isKindOfClass(NSNull))==true) {
             return nil
         }
         return snapshot
+    }
+    
+    // snapshotのNSNull対応.
+    private func notEmpty( data:FIRMutableData! ) -> FIRMutableData! {
+        //print("ノードの値が変わりました！: \(snapshot.value?.description)")
+        if ((data.value?.isKindOfClass(NSNull))==true) {
+            return nil
+        }
+        return data
     }
 }
 
@@ -242,13 +307,16 @@ class FirebaseByRedishUserApps {
         var ref = CORE.createReference("/messages/\(key)/")
         CORE.addValue(ref, value: ["message": message, "sender": uKey, "send_at": now])
         
-        // usersにセット.
-        ref = CORE.createReference("/users/\(uKey)/merchant_users/")
-        CORE.setValue(ref, key:muKey, value:["room": key, "last_update_at": now, "last_message": message])
-        
         // merchant_usersにセット.
-        ref = CORE.createReference("/merchant_users/\(muKey)/users/")
-        CORE.setValue(ref, key:uKey, value:["room": key, "last_update_at": now, "last_message": message])
+        ref = CORE.createReference("/merchant_users/\(muKey)/users/\(uKey)/")
+        CORE.updateValue(ref, values:["room": key, "last_update_at": now, "last_message": message])
+        CORE.addCount(ref, target:"unread_number")
+        
+        // usersにセット.
+        ref = CORE.createReference("/users/\(uKey)/merchant_users/\(muKey)/")
+        CORE.updateValue(ref, values:["room": key, "last_update_at": now, "last_message": message])
+        CORE.addCount(ref, target:"unread_number")
+        
     }
     
     // 対象スタッフIDのルーム監視開始.
@@ -278,6 +346,10 @@ class FirebaseByRedishUserApps {
         // 監視開始.
         e.hnd = CORE.startMonitorToAdded(e.ref,limit: limit, call: call)
         self.merchantUserId = merchantUserId
+        
+        // 未読カウントをクリア.
+        let ref = CORE.createReference("/users/\(uKey)/merchant_users/\(muKey)/")
+        CORE.setCount(ref, target:"unread_number", changeValue:0)
     }
     
     // 対象スタッフIDのルーム監視終了.

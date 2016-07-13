@@ -1,0 +1,539 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AutoSync"
+- "FirebaseByRedishUserApps"
+provides-nominal:
+- "C5adhoc8AutoSync"
+- "C5adhoc24FirebaseByRedishUserApps"
+provides-member:
+- ["C5adhoc8AutoSync", ""]
+- ["C5adhoc24FirebaseByRedishUserApps", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "StringLiteralType"
+- !private "!="
+- !private "nowDateString"
+- "UInt"
+- "Int"
+- !private "objc_sync_exit"
+- "String"
+- !private "print"
+- !private "NSNull"
+- !private "+"
+- "RedishFirebaseElement"
+- "Void"
+- "AnyObject"
+- "FirebaseByRedishUserApps"
+- !private "DatetimeFormat_"
+- !private "FIRDatabaseReference"
+- "FIRDataSnapshot"
+- !private "objc_sync_enter"
+- !private "UnicodeScalarType"
+- !private "||"
+- "DatetimeFormat"
+- !private "=="
+- !private "FIRApp"
+- "BooleanLiteralType"
+- !private "FIRMutableData"
+- "RedishFirebaseCore"
+- !private "FIRTransactionResult"
+- "Bool"
+- !private "NSDate"
+- !private "dateString"
+- !private "Dictionary"
+- !private "NSLocale"
+- !private "FIRDatabase"
+- !private "CORE"
+- "AutoSync"
+- !private "NSDateFormatter"
+- !private "FIRDatabaseHandle"
+depends-member:
+- !private ["PSs9AnyObject", "AutoSync"]
+- !private ["PSs9AnyObject", "CORE"]
+- !private ["PSs9AnyObject", "Dictionary"]
+- !private ["PSs9AnyObject", "FIRApp"]
+- !private ["PSs9AnyObject", "FIRDatabase"]
+- !private ["PSs9AnyObject", "FIRTransactionResult"]
+- !private ["PSs9AnyObject", "NSDateFormatter"]
+- !private ["PSs9AnyObject", "NSLocale"]
+- !private ["PSs9AnyObject", "NSNull"]
+- !private ["PSs9AnyObject", "RedishFirebaseElement"]
+- !private ["PSs9AnyObject", "_create"]
+- !private ["PSs9AnyObject", "addCount"]
+- !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "child"]
+- !private ["PSs9AnyObject", "childByAutoId"]
+- !private ["PSs9AnyObject", "configure"]
+- !private ["PSs9AnyObject", "convertSnapshot"]
+- !private ["PSs9AnyObject", "createElement"]
+- !private ["PSs9AnyObject", "createFlag"]
+- !private ["PSs9AnyObject", "createReference"]
+- !private ["PSs9AnyObject", "database"]
+- !private ["PSs9AnyObject", "dateFormat"]
+- !private ["PSs9AnyObject", "destroy"]
+- !private ["PSs9AnyObject", "destroyElement"]
+- !private ["PSs9AnyObject", "endMonitor"]
+- !private ["PSs9AnyObject", "formatter"]
+- !private ["PSs9AnyObject", "hnd"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "initFlag"]
+- !private ["PSs9AnyObject", "isKindOfClass"]
+- !private ["PSs9AnyObject", "locale"]
+- !private ["PSs9AnyObject", "merchantUserId"]
+- !private ["PSs9AnyObject", "messages"]
+- !private ["PSs9AnyObject", "nowDateString"]
+- !private ["PSs9AnyObject", "o"]
+- !private ["PSs9AnyObject", "objc_sync_enter"]
+- !private ["PSs9AnyObject", "objc_sync_exit"]
+- !private ["PSs9AnyObject", "observeEventType"]
+- !private ["PSs9AnyObject", "path"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "queryLimitedToLast"]
+- !private ["PSs9AnyObject", "ref"]
+- !private ["PSs9AnyObject", "reference"]
+- !private ["PSs9AnyObject", "removeObserverWithHandle"]
+- !private ["PSs9AnyObject", "rootRef"]
+- !private ["PSs9AnyObject", "runTransactionBlock"]
+- !private ["PSs9AnyObject", "setCount"]
+- !private ["PSs9AnyObject", "setValue"]
+- !private ["PSs9AnyObject", "startMonitor"]
+- !private ["PSs9AnyObject", "startMonitorToAdded"]
+- !private ["PSs9AnyObject", "stopMonitor"]
+- !private ["PSs9AnyObject", "stringFromDate"]
+- !private ["PSs9AnyObject", "successWithValue"]
+- !private ["PSs9AnyObject", "user"]
+- !private ["PSs9AnyObject", "userId"]
+- !private ["PSs9AnyObject", "value"]
+- ["PSs9AnyObject", ""]
+- ["C5adhoc8AutoSync", "AnyObject"]
+- ["C5adhoc8AutoSync", "deinit"]
+- ["C5adhoc8AutoSync", "init"]
+- ["C5adhoc8AutoSync", "o"]
+- !private ["C5adhoc8AutoSync", "objc_sync_enter"]
+- !private ["C5adhoc8AutoSync", "objc_sync_exit"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Stride"]
+- !private ["PSs11CVarArgType", "child"]
+- !private ["PSs11CVarArgType", "childByAutoId"]
+- !private ["PSs11CVarArgType", "configure"]
+- !private ["PSs11CVarArgType", "database"]
+- !private ["PSs11CVarArgType", "dateFormat"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "locale"]
+- !private ["PSs11CVarArgType", "observeEventType"]
+- !private ["PSs11CVarArgType", "queryLimitedToLast"]
+- !private ["PSs11CVarArgType", "reference"]
+- !private ["PSs11CVarArgType", "removeObserverWithHandle"]
+- !private ["PSs11CVarArgType", "runTransactionBlock"]
+- !private ["PSs11CVarArgType", "setValue"]
+- !private ["PSs11CVarArgType", "stringFromDate"]
+- !private ["PSs11CVarArgType", "successWithValue"]
+- !private ["PSs11CVarArgType", "value"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Stride"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "child"]
+- !private ["PSs23CustomStringConvertible", "childByAutoId"]
+- !private ["PSs23CustomStringConvertible", "configure"]
+- !private ["PSs23CustomStringConvertible", "database"]
+- !private ["PSs23CustomStringConvertible", "dateFormat"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "locale"]
+- !private ["PSs23CustomStringConvertible", "observeEventType"]
+- !private ["PSs23CustomStringConvertible", "queryLimitedToLast"]
+- !private ["PSs23CustomStringConvertible", "reference"]
+- !private ["PSs23CustomStringConvertible", "removeObserverWithHandle"]
+- !private ["PSs23CustomStringConvertible", "runTransactionBlock"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
+- !private ["PSs23CustomStringConvertible", "stringFromDate"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "successWithValue"]
+- !private ["PSs23CustomStringConvertible", "value"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "init"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "ChildAdded"]
+- !private ["PSs9Equatable", "ChildChanged"]
+- !private ["PSs9Equatable", "Stride"]
+- !private ["PSs9Equatable", "Value"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "child"]
+- !private ["PSs9Equatable", "childByAutoId"]
+- !private ["PSs9Equatable", "configure"]
+- !private ["PSs9Equatable", "database"]
+- !private ["PSs9Equatable", "dateFormat"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "locale"]
+- !private ["PSs9Equatable", "observeEventType"]
+- !private ["PSs9Equatable", "queryLimitedToLast"]
+- !private ["PSs9Equatable", "reference"]
+- !private ["PSs9Equatable", "removeObserverWithHandle"]
+- !private ["PSs9Equatable", "runTransactionBlock"]
+- !private ["PSs9Equatable", "setValue"]
+- !private ["PSs9Equatable", "stringFromDate"]
+- !private ["PSs9Equatable", "successWithValue"]
+- !private ["PSs9Equatable", "value"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo6FIRApp", "configure"]
+- !private ["OSC16FIRDataEventType", "ChildAdded"]
+- !private ["OSC16FIRDataEventType", "ChildChanged"]
+- !private ["OSC16FIRDataEventType", "Value"]
+- !private ["CSo15FIRDataSnapshot", "deinit"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "childByAutoId"]
+- !private ["CSo16FIRDatabaseQuery", "deinit"]
+- !private ["CSo16FIRDatabaseQuery", "observeEventType"]
+- !private ["CSo16FIRDatabaseQuery", "queryLimitedToLast"]
+- !private ["CSo16FIRDatabaseQuery", "removeObserverWithHandle"]
+- !private ["CSo16FIRDatabaseQuery", "runTransactionBlock"]
+- !private ["CSo16FIRDatabaseQuery", "setValue"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- !private ["CSo20FIRDatabaseReference", "childByAutoId"]
+- !private ["CSo20FIRDatabaseReference", "deinit"]
+- !private ["CSo20FIRDatabaseReference", "queryLimitedToLast"]
+- !private ["CSo20FIRDatabaseReference", "removeObserverWithHandle"]
+- !private ["CSo20FIRDatabaseReference", "runTransactionBlock"]
+- !private ["CSo20FIRDatabaseReference", "setValue"]
+- !private ["CSo14FIRMutableData", "value"]
+- !private ["CSo20FIRTransactionResult", "successWithValue"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "AutoSync"]
+- ["C5adhoc24FirebaseByRedishUserApps", "Bool"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "CORE"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "Dictionary"]
+- ["C5adhoc24FirebaseByRedishUserApps", "FIRDataSnapshot"]
+- ["C5adhoc24FirebaseByRedishUserApps", "Int"]
+- ["C5adhoc24FirebaseByRedishUserApps", "RedishFirebaseElement"]
+- ["C5adhoc24FirebaseByRedishUserApps", "String"]
+- ["C5adhoc24FirebaseByRedishUserApps", "UInt"]
+- ["C5adhoc24FirebaseByRedishUserApps", "Void"]
+- ["C5adhoc24FirebaseByRedishUserApps", "create"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "createFlag"]
+- ["C5adhoc24FirebaseByRedishUserApps", "createRoom"]
+- ["C5adhoc24FirebaseByRedishUserApps", "deinit"]
+- ["C5adhoc24FirebaseByRedishUserApps", "destroy"]
+- ["C5adhoc24FirebaseByRedishUserApps", "init"]
+- ["C5adhoc24FirebaseByRedishUserApps", "isCreate"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "merchantUserId"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "messages"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "nowDateString"]
+- ["C5adhoc24FirebaseByRedishUserApps", "send"]
+- ["C5adhoc24FirebaseByRedishUserApps", "startMonitor"]
+- ["C5adhoc24FirebaseByRedishUserApps", "stopMonitor"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "user"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "userId"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Stride"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "ChildAdded"]
+- !private ["PSs8Hashable", "ChildChanged"]
+- !private ["PSs8Hashable", "Stride"]
+- !private ["PSs8Hashable", "Value"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "child"]
+- !private ["PSs8Hashable", "childByAutoId"]
+- !private ["PSs8Hashable", "configure"]
+- !private ["PSs8Hashable", "database"]
+- !private ["PSs8Hashable", "dateFormat"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "locale"]
+- !private ["PSs8Hashable", "observeEventType"]
+- !private ["PSs8Hashable", "queryLimitedToLast"]
+- !private ["PSs8Hashable", "reference"]
+- !private ["PSs8Hashable", "removeObserverWithHandle"]
+- !private ["PSs8Hashable", "runTransactionBlock"]
+- !private ["PSs8Hashable", "setValue"]
+- !private ["PSs8Hashable", "stringFromDate"]
+- !private ["PSs8Hashable", "successWithValue"]
+- !private ["PSs8Hashable", "value"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
+- !private ["PSs11IntegerType", "Stride"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "locale"]
+- !private ["PSo8NSCoding", "stringFromDate"]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "locale"]
+- !private ["PSo9NSCopying", "stringFromDate"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo15NSDateFormatter", "dateFormat"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "locale"]
+- !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["CSo11NSFormatter", "dateFormat"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "locale"]
+- !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo8NSLocale", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "childByAutoId"]
+- !private ["CSo8NSObject", "configure"]
+- !private ["CSo8NSObject", "database"]
+- !private ["CSo8NSObject", "dateFormat"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "locale"]
+- !private ["CSo8NSObject", "observeEventType"]
+- !private ["CSo8NSObject", "queryLimitedToLast"]
+- !private ["CSo8NSObject", "reference"]
+- !private ["CSo8NSObject", "removeObserverWithHandle"]
+- !private ["CSo8NSObject", "runTransactionBlock"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "successWithValue"]
+- !private ["CSo8NSObject", "value"]
+- !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "childByAutoId"]
+- !private ["PSo16NSObjectProtocol", "configure"]
+- !private ["PSo16NSObjectProtocol", "database"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "locale"]
+- !private ["PSo16NSObjectProtocol", "observeEventType"]
+- !private ["PSo16NSObjectProtocol", "queryLimitedToLast"]
+- !private ["PSo16NSObjectProtocol", "reference"]
+- !private ["PSo16NSObjectProtocol", "removeObserverWithHandle"]
+- !private ["PSo16NSObjectProtocol", "runTransactionBlock"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "successWithValue"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
+- !private ["PSs16RawRepresentable", "ChildAdded"]
+- !private ["PSs16RawRepresentable", "ChildChanged"]
+- !private ["PSs16RawRepresentable", "Value"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Stride"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "Stride"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs19UnsignedIntegerType", "Stride"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "Stride"]
+- !private ["PSs14_Incrementable", "Stride"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
+- !private ["PSs12_IntegerType", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Stride"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs11_Strideable", "Stride"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C5adhoc8AutoSync"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- !private "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo6FIRApp"
+- !private "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- !private "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- !private "CSo20FIRDatabaseReference"
+- !private "CSo14FIRMutableData"
+- !private "CSo20FIRTransactionResult"
+- "C5adhoc24FirebaseByRedishUserApps"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo15NSDateFormatter"
+- !private "CSo11NSFormatter"
+- !private "CSo8NSLocale"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs19UnsignedIntegerType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs28_DisallowMixedSignArithmetic"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+- !private "isKindOfClass"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "c2df40e5f3c14a6dd3ac13978a24c170"

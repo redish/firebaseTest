@@ -10,65 +10,75 @@ provides-member:
 - ["C5adhoc24FirebaseByRedishUserApps", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AutoSync"
-- !private "FIRDatabaseHandle"
-- "UInt"
-- "FirebaseByRedishUserApps"
-- !private "nowDateString"
-- !private "NSLocale"
-- !private "NSDateFormatter"
-- "StringLiteralType"
-- !private "||"
-- !private "NSDate"
-- !private "dateString"
-- "RedishFirebaseElement"
-- "Void"
-- !private "=="
-- "DatetimeFormat"
-- "RedishFirebaseCore"
-- !private "objc_sync_enter"
-- "FIRDataSnapshot"
-- !private "FIRDatabaseReference"
-- "Bool"
-- "Int"
-- !private "Dictionary"
-- "AnyObject"
-- "BooleanLiteralType"
+- !private "FIRApp"
+- !private "FIRTransactionResult"
 - !private "CORE"
 - !private "DatetimeFormat_"
-- !private "FIRApp"
-- !private "UnicodeScalarType"
-- !private "NSNull"
+- "RedishFirebaseCore"
+- "Bool"
 - !private "print"
 - !private "FIRDatabase"
-- "String"
-- !private "!="
+- "AutoSync"
+- "BooleanLiteralType"
 - !private "objc_sync_exit"
+- "String"
+- !private "FIRDatabaseHandle"
+- !private "!="
+- !private "NSNull"
+- !private "NSDate"
+- !private "dateString"
+- !private "NSLocale"
+- "AnyObject"
+- "FirebaseByRedishUserApps"
+- "UInt"
+- !private "||"
+- !private "nowDateString"
+- !private "objc_sync_enter"
+- !private "NSDateFormatter"
+- !private "+"
+- !private "=="
+- !private "UnicodeScalarType"
+- "DatetimeFormat"
+- "StringLiteralType"
+- "RedishFirebaseElement"
+- "FIRDataSnapshot"
+- !private "FIRMutableData"
+- !private "Dictionary"
+- "Int"
+- "Void"
+- !private "FIRDatabaseReference"
 depends-member:
+- !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "AutoSync"]
 - !private ["PSs9AnyObject", "CORE"]
 - !private ["PSs9AnyObject", "Dictionary"]
 - !private ["PSs9AnyObject", "FIRApp"]
 - !private ["PSs9AnyObject", "FIRDatabase"]
+- !private ["PSs9AnyObject", "FIRTransactionResult"]
+- !private ["PSs9AnyObject", "Int"]
 - !private ["PSs9AnyObject", "NSDateFormatter"]
 - !private ["PSs9AnyObject", "NSLocale"]
 - !private ["PSs9AnyObject", "NSNull"]
 - !private ["PSs9AnyObject", "RedishFirebaseElement"]
+- !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "_create"]
+- !private ["PSs9AnyObject", "addCount"]
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "child"]
 - !private ["PSs9AnyObject", "childByAutoId"]
 - !private ["PSs9AnyObject", "configure"]
-- !private ["PSs9AnyObject", "convertSnapshot"]
 - !private ["PSs9AnyObject", "createElement"]
 - !private ["PSs9AnyObject", "createFlag"]
 - !private ["PSs9AnyObject", "createReference"]
 - !private ["PSs9AnyObject", "database"]
 - !private ["PSs9AnyObject", "dateFormat"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "description"]
 - !private ["PSs9AnyObject", "destroy"]
 - !private ["PSs9AnyObject", "destroyElement"]
 - !private ["PSs9AnyObject", "endMonitor"]
 - !private ["PSs9AnyObject", "formatter"]
+- !private ["PSs9AnyObject", "hasChildren"]
 - !private ["PSs9AnyObject", "hnd"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "initFlag"]
@@ -76,6 +86,7 @@ depends-member:
 - !private ["PSs9AnyObject", "locale"]
 - !private ["PSs9AnyObject", "merchantUserId"]
 - !private ["PSs9AnyObject", "messages"]
+- !private ["PSs9AnyObject", "notEmpty"]
 - !private ["PSs9AnyObject", "nowDateString"]
 - !private ["PSs9AnyObject", "o"]
 - !private ["PSs9AnyObject", "objc_sync_enter"]
@@ -88,11 +99,15 @@ depends-member:
 - !private ["PSs9AnyObject", "reference"]
 - !private ["PSs9AnyObject", "removeObserverWithHandle"]
 - !private ["PSs9AnyObject", "rootRef"]
+- !private ["PSs9AnyObject", "runTransactionBlock"]
+- !private ["PSs9AnyObject", "setCount"]
 - !private ["PSs9AnyObject", "setValue"]
 - !private ["PSs9AnyObject", "startMonitor"]
 - !private ["PSs9AnyObject", "startMonitorToAdded"]
 - !private ["PSs9AnyObject", "stopMonitor"]
 - !private ["PSs9AnyObject", "stringFromDate"]
+- !private ["PSs9AnyObject", "successWithValue"]
+- !private ["PSs9AnyObject", "updateValue"]
 - !private ["PSs9AnyObject", "user"]
 - !private ["PSs9AnyObject", "userId"]
 - !private ["PSs9AnyObject", "value"]
@@ -104,7 +119,9 @@ depends-member:
 - !private ["C5adhoc8AutoSync", "objc_sync_enter"]
 - !private ["C5adhoc8AutoSync", "objc_sync_exit"]
 - !private ["PSs22BidirectionalIndexType", "Stride"]
+- !private ["PSs22BidirectionalIndexType", "init"]
 - !private ["PSs21BitwiseOperationsType", "Stride"]
+- !private ["PSs21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -115,14 +132,17 @@ depends-member:
 - !private ["PSs11CVarArgType", "configure"]
 - !private ["PSs11CVarArgType", "database"]
 - !private ["PSs11CVarArgType", "dateFormat"]
+- !private ["PSs11CVarArgType", "hasChildren"]
 - !private ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "locale"]
 - !private ["PSs11CVarArgType", "observeEventType"]
 - !private ["PSs11CVarArgType", "queryLimitedToLast"]
 - !private ["PSs11CVarArgType", "reference"]
 - !private ["PSs11CVarArgType", "removeObserverWithHandle"]
+- !private ["PSs11CVarArgType", "runTransactionBlock"]
 - !private ["PSs11CVarArgType", "setValue"]
 - !private ["PSs11CVarArgType", "stringFromDate"]
+- !private ["PSs11CVarArgType", "successWithValue"]
 - !private ["PSs11CVarArgType", "value"]
 - !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Generator"]
@@ -135,10 +155,12 @@ depends-member:
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Key"]
 - !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "Value"]
@@ -148,21 +170,27 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "configure"]
 - !private ["PSs23CustomStringConvertible", "database"]
 - !private ["PSs23CustomStringConvertible", "dateFormat"]
+- !private ["PSs23CustomStringConvertible", "hasChildren"]
 - !private ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "locale"]
 - !private ["PSs23CustomStringConvertible", "observeEventType"]
 - !private ["PSs23CustomStringConvertible", "queryLimitedToLast"]
 - !private ["PSs23CustomStringConvertible", "reference"]
 - !private ["PSs23CustomStringConvertible", "removeObserverWithHandle"]
+- !private ["PSs23CustomStringConvertible", "runTransactionBlock"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
 - !private ["PSs23CustomStringConvertible", "stringFromDate"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "successWithValue"]
 - !private ["PSs23CustomStringConvertible", "value"]
+- !private ["VSs10Dictionary", "Generator"]
 - !private ["VSs10Dictionary", "Key"]
 - !private ["VSs10Dictionary", "Value"]
 - !private ["VSs10Dictionary", "deinit"]
 - !private ["VSs10Dictionary", "init"]
 - !private ["VSs10Dictionary", "subscript"]
+- !private ["VSs19DictionaryGenerator", "Element"]
+- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
 - !private ["PSs28DictionaryLiteralConvertible", "Key"]
 - !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["PSs28DictionaryLiteralConvertible", "init"]
@@ -178,14 +206,17 @@ depends-member:
 - !private ["PSs9Equatable", "configure"]
 - !private ["PSs9Equatable", "database"]
 - !private ["PSs9Equatable", "dateFormat"]
+- !private ["PSs9Equatable", "hasChildren"]
 - !private ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "locale"]
 - !private ["PSs9Equatable", "observeEventType"]
 - !private ["PSs9Equatable", "queryLimitedToLast"]
 - !private ["PSs9Equatable", "reference"]
 - !private ["PSs9Equatable", "removeObserverWithHandle"]
+- !private ["PSs9Equatable", "runTransactionBlock"]
 - !private ["PSs9Equatable", "setValue"]
 - !private ["PSs9Equatable", "stringFromDate"]
+- !private ["PSs9Equatable", "successWithValue"]
 - !private ["PSs9Equatable", "value"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo6FIRApp", "configure"]
@@ -202,13 +233,19 @@ depends-member:
 - !private ["CSo16FIRDatabaseQuery", "observeEventType"]
 - !private ["CSo16FIRDatabaseQuery", "queryLimitedToLast"]
 - !private ["CSo16FIRDatabaseQuery", "removeObserverWithHandle"]
+- !private ["CSo16FIRDatabaseQuery", "runTransactionBlock"]
 - !private ["CSo16FIRDatabaseQuery", "setValue"]
 - !private ["CSo20FIRDatabaseReference", "child"]
 - !private ["CSo20FIRDatabaseReference", "childByAutoId"]
 - !private ["CSo20FIRDatabaseReference", "deinit"]
 - !private ["CSo20FIRDatabaseReference", "queryLimitedToLast"]
 - !private ["CSo20FIRDatabaseReference", "removeObserverWithHandle"]
+- !private ["CSo20FIRDatabaseReference", "runTransactionBlock"]
 - !private ["CSo20FIRDatabaseReference", "setValue"]
+- !private ["CSo14FIRMutableData", "deinit"]
+- !private ["CSo14FIRMutableData", "hasChildren"]
+- !private ["CSo14FIRMutableData", "value"]
+- !private ["CSo20FIRTransactionResult", "successWithValue"]
 - !private ["C5adhoc24FirebaseByRedishUserApps", "AutoSync"]
 - ["C5adhoc24FirebaseByRedishUserApps", "Bool"]
 - !private ["C5adhoc24FirebaseByRedishUserApps", "CORE"]
@@ -236,6 +273,7 @@ depends-member:
 - !private ["C5adhoc24FirebaseByRedishUserApps", "userId"]
 - !private ["Sf", "deinit"]
 - !private ["PSs16ForwardIndexType", "Stride"]
+- !private ["PSs16ForwardIndexType", "init"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "ChildAdded"]
 - !private ["PSs8Hashable", "ChildChanged"]
@@ -247,14 +285,17 @@ depends-member:
 - !private ["PSs8Hashable", "configure"]
 - !private ["PSs8Hashable", "database"]
 - !private ["PSs8Hashable", "dateFormat"]
+- !private ["PSs8Hashable", "hasChildren"]
 - !private ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "locale"]
 - !private ["PSs8Hashable", "observeEventType"]
 - !private ["PSs8Hashable", "queryLimitedToLast"]
 - !private ["PSs8Hashable", "reference"]
 - !private ["PSs8Hashable", "removeObserverWithHandle"]
+- !private ["PSs8Hashable", "runTransactionBlock"]
 - !private ["PSs8Hashable", "setValue"]
 - !private ["PSs8Hashable", "stringFromDate"]
+- !private ["PSs8Hashable", "successWithValue"]
 - !private ["PSs8Hashable", "value"]
 - !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Generator"]
@@ -267,13 +308,17 @@ depends-member:
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "deinit"]
+- !private ["Si", "init"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
 - !private ["VSs5Int64", "deinit"]
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Stride"]
+- !private ["PSs21IntegerArithmeticType", "init"]
 - !private ["PSs25IntegerLiteralConvertible", "Stride"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs11IntegerType", "Stride"]
+- !private ["PSs11IntegerType", "init"]
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "init"]
@@ -300,28 +345,34 @@ depends-member:
 - !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "hasChildren"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "locale"]
 - !private ["CSo8NSObject", "observeEventType"]
 - !private ["CSo8NSObject", "queryLimitedToLast"]
 - !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "removeObserverWithHandle"]
+- !private ["CSo8NSObject", "runTransactionBlock"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "successWithValue"]
 - !private ["CSo8NSObject", "value"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "childByAutoId"]
 - !private ["PSo16NSObjectProtocol", "configure"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
+- !private ["PSo16NSObjectProtocol", "hasChildren"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "locale"]
 - !private ["PSo16NSObjectProtocol", "observeEventType"]
 - !private ["PSo16NSObjectProtocol", "queryLimitedToLast"]
 - !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "removeObserverWithHandle"]
+- !private ["PSo16NSObjectProtocol", "runTransactionBlock"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "successWithValue"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "deinit"]
@@ -329,6 +380,7 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Stride"]
+- !private ["PSs21RandomAccessIndexType", "init"]
 - !private ["PSs16RawRepresentable", "ChildAdded"]
 - !private ["PSs16RawRepresentable", "ChildChanged"]
 - !private ["PSs16RawRepresentable", "Value"]
@@ -341,12 +393,16 @@ depends-member:
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "init"]
+- !private ["PSs16SignedNumberType", "init"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Stride"]
+- !private ["PSs10Strideable", "init"]
+- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -362,14 +418,19 @@ depends-member:
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs28_DisallowMixedSignArithmetic", "Stride"]
 - !private ["PSs14_Incrementable", "Stride"]
+- !private ["PSs14_Incrementable", "init"]
 - !private ["PSs22_IntegerArithmeticType", "Stride"]
+- !private ["PSs22_IntegerArithmeticType", "init"]
 - !private ["PSs12_IntegerType", "Stride"]
+- !private ["PSs12_IntegerType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Key"]
 - !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "Value"]
@@ -378,13 +439,17 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Stride"]
+- !private ["PSs22_RandomAccessAmbiguity", "init"]
+- !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Key"]
 - !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "init"]
 - !private ["PSs11_Strideable", "Stride"]
+- !private ["PSs11_Strideable", "init"]
 depends-nominal:
 - "PSs9AnyObject"
 - "C5adhoc8AutoSync"
@@ -400,6 +465,7 @@ depends-nominal:
 - !private "PSs28CustomDebugStringConvertible"
 - !private "PSs23CustomStringConvertible"
 - !private "VSs10Dictionary"
+- !private "VSs19DictionaryGenerator"
 - !private "PSs28DictionaryLiteralConvertible"
 - !private "Sd"
 - !private "PSs9Equatable"
@@ -410,6 +476,8 @@ depends-nominal:
 - !private "CSo11FIRDatabase"
 - !private "CSo16FIRDatabaseQuery"
 - !private "CSo20FIRDatabaseReference"
+- !private "CSo14FIRMutableData"
+- !private "CSo20FIRTransactionResult"
 - "C5adhoc24FirebaseByRedishUserApps"
 - !private "Sf"
 - !private "PSs16ForwardIndexType"
@@ -443,6 +511,8 @@ depends-nominal:
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs16RawRepresentable"
 - !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
 - !private "PSs10Streamable"
 - !private "PSs10Strideable"
@@ -472,9 +542,11 @@ depends-nominal:
 - !private "VSs26_OptionalNilComparisonType"
 - !private "PSs22_RandomAccessAmbiguity"
 - !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
 depends-dynamic-lookup:
 - !private "isKindOfClass"
+- !private "description"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
