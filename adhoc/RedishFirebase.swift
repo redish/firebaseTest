@@ -235,15 +235,16 @@ class FirebaseByRedishUserApps {
         let now = nowDateString()
         
         // messagesにセット.
-        var ref = CORE.createReference("/members/\(key)/")
-        CORE.addValue(ref, value: ["message": message, "sender": uKey, "send_at": now])
+        var ref = CORE.createReference("/messages/\(key)/")
+        ref = ref.childByAutoId()
+        ref.setValue(["message": message, "sender": uKey, "send_at": now])
         
         // usersにセット.
-        ref = CORE.createReference("/users/\(uKey)/merchant_users/\(muKey)/")
+        ref = CORE.createReference("/users/\(uKey)/merchant_users/")
         CORE.setValue(ref, key:muKey, value:["room": key, "last_update_at": now, "last_message": message])
         
         // merchant_usersにセット.
-        ref = CORE.createReference("/merchant_users/\(muKey)/users/\(uKey)/")
+        ref = CORE.createReference("/merchant_users/\(muKey)/users/")
         CORE.setValue(ref, key:uKey, value:["room": key, "last_update_at": now, "last_message": message])
     }
     
