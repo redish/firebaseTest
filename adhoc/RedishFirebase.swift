@@ -83,6 +83,7 @@ private class RedishFirebaseCore {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.Value, withBlock: { snapshot in
             if self.convertSnapshot(snapshot) != nil {
+                print( "##################startMonitor:\(snapshot)")
                 call(snapshot)
             }
         })
@@ -93,6 +94,7 @@ private class RedishFirebaseCore {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildAdded, withBlock: { snapshot in
             if self.convertSnapshot(snapshot) != nil {
+                print( "##################startMonitorToAdded:\(snapshot)")
                 call(snapshot)
             }
         })
@@ -103,6 +105,7 @@ private class RedishFirebaseCore {
         _create()
         return target.queryLimitedToLast(limit).observeEventType(.ChildChanged, withBlock: { snapshot in
             if self.convertSnapshot(snapshot) != nil {
+                print( "##################startMonitorToUpdate:\(snapshot)")
                 call(snapshot)
             }
         })
@@ -146,6 +149,7 @@ private class RedishFirebaseCore {
     
     // snapshotのNSNull対応.
     private func convertSnapshot( snapshot:FIRDataSnapshot! ) -> FIRDataSnapshot! {
+        //print("ノードの値が変わりました！: \(snapshot.value?.description)")
         if ((snapshot.value?.isKindOfClass(NSNull))==true) {
             return nil
         }
@@ -235,15 +239,15 @@ class FirebaseByRedishUserApps {
         let now = nowDateString()
         
         // messagesにセット.
-        var ref = CORE.createReference("/members/\(key)/")
+        var ref = CORE.createReference("/messages/\(key)/")
         CORE.addValue(ref, value: ["message": message, "sender": uKey, "send_at": now])
         
         // usersにセット.
-        ref = CORE.createReference("/users/\(uKey)/merchant_users/\(muKey)/")
+        ref = CORE.createReference("/users/\(uKey)/merchant_users/")
         CORE.setValue(ref, key:muKey, value:["room": key, "last_update_at": now, "last_message": message])
         
         // merchant_usersにセット.
-        ref = CORE.createReference("/merchant_users/\(muKey)/users/\(uKey)/")
+        ref = CORE.createReference("/merchant_users/\(muKey)/users/")
         CORE.setValue(ref, key:uKey, value:["room": key, "last_update_at": now, "last_message": message])
     }
     

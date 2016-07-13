@@ -10,38 +10,39 @@ provides-member:
 - ["C5adhoc24FirebaseByRedishUserApps", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BooleanLiteralType"
-- !private "NSDateFormatter"
-- "Void"
-- "RedishFirebaseCore"
-- !private "dateString"
-- !private "NSDate"
-- !private "CORE"
-- !private "NSLocale"
 - "AutoSync"
-- "FIRDataSnapshot"
-- !private "!="
-- "Int"
 - !private "FIRDatabaseHandle"
 - "UInt"
-- !private "Dictionary"
-- !private "UnicodeScalarType"
 - "FirebaseByRedishUserApps"
-- "DatetimeFormat"
-- !private "objc_sync_enter"
+- !private "nowDateString"
+- !private "NSLocale"
+- !private "NSDateFormatter"
+- "StringLiteralType"
 - !private "||"
-- !private "NSNull"
-- !private "DatetimeFormat_"
+- !private "NSDate"
+- !private "dateString"
+- "RedishFirebaseElement"
+- "Void"
+- !private "=="
+- "DatetimeFormat"
+- "RedishFirebaseCore"
+- !private "objc_sync_enter"
+- "FIRDataSnapshot"
+- !private "FIRDatabaseReference"
 - "Bool"
+- "Int"
+- !private "Dictionary"
+- "AnyObject"
+- "BooleanLiteralType"
+- !private "CORE"
+- !private "DatetimeFormat_"
+- !private "FIRApp"
+- !private "UnicodeScalarType"
+- !private "NSNull"
+- !private "print"
 - !private "FIRDatabase"
 - "String"
-- !private "nowDateString"
-- "StringLiteralType"
-- !private "FIRDatabaseReference"
-- !private "=="
-- !private "FIRApp"
-- "AnyObject"
-- "RedishFirebaseElement"
+- !private "!="
 - !private "objc_sync_exit"
 depends-member:
 - !private ["PSs9AnyObject", "AutoSync"]
@@ -81,6 +82,7 @@ depends-member:
 - !private ["PSs9AnyObject", "objc_sync_exit"]
 - !private ["PSs9AnyObject", "observeEventType"]
 - !private ["PSs9AnyObject", "path"]
+- !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "queryLimitedToLast"]
 - !private ["PSs9AnyObject", "ref"]
 - !private ["PSs9AnyObject", "reference"]
@@ -322,6 +324,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
