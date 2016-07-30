@@ -1,0 +1,321 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "URLStringConvertible"
+- "URLRequestConvertible"
+- "URLRequest"
+- "request"
+- "request"
+- "upload"
+- "upload"
+- "upload"
+- "upload"
+- "upload"
+- "upload"
+- "upload"
+- "upload"
+- "download"
+- "download"
+- "download"
+provides-nominal:
+- "P9Alamofire20URLStringConvertible"
+- "SS"
+- "CSo5NSURL"
+- "CSo15NSURLComponents"
+- "CSo12NSURLRequest"
+- "P9Alamofire21URLRequestConvertible"
+provides-member:
+- ["P9Alamofire20URLStringConvertible", ""]
+- ["SS", ""]
+- ["CSo5NSURL", ""]
+- ["CSo15NSURLComponents", ""]
+- ["CSo12NSURLRequest", ""]
+- ["P9Alamofire21URLRequestConvertible", ""]
+provides-dynamic-lookup:
+- "URLRequest"
+- "URLString"
+- "URLString"
+- "URLString"
+depends-top-level:
+- "MultipartFormData"
+- "URLRequestConvertible"
+- "Void"
+- "AnyObject"
+- "NSURLComponents"
+- "NSInputStream"
+- "UInt64"
+- "NSData"
+- "Manager"
+- "download"
+- "String"
+- "Method"
+- "upload"
+- "NSURL"
+- "URLRequest"
+- "ParameterEncoding"
+- "NSMutableURLRequest"
+- "Request"
+- "request"
+- "NSURLRequest"
+- "URLStringConvertible"
+depends-member:
+- ["Ps9AnyObject", "DownloadFileDestination"]
+- !private ["Ps9AnyObject", "HTTPMethod"]
+- !private ["Ps9AnyObject", "MultipartFormDataEncodingMemoryThreshold"]
+- ["Ps9AnyObject", "MultipartFormDataEncodingResult"]
+- !private ["Ps9AnyObject", "URL"]
+- ["Ps9AnyObject", "URLRequest"]
+- ["Ps9AnyObject", "URLString"]
+- !private ["Ps9AnyObject", "absoluteString"]
+- !private ["Ps9AnyObject", "download"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mutableCopy"]
+- !private ["Ps9AnyObject", "request"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "upload"]
+- !private ["Ps11CVarArgType", "HTTPMethod"]
+- !private ["Ps11CVarArgType", "URL"]
+- ["Ps11CVarArgType", "URLRequest"]
+- ["Ps11CVarArgType", "URLString"]
+- !private ["Ps11CVarArgType", "absoluteString"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "mutableCopy"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps14CollectionType", "Generator"]
+- ["Ps10Comparable", "URLString"]
+- ["Ps28CustomDebugStringConvertible", "DownloadFileDestination"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "HTTPMethod"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- ["Ps28CustomDebugStringConvertible", "URLRequest"]
+- ["Ps28CustomDebugStringConvertible", "URLString"]
+- !private ["Ps28CustomDebugStringConvertible", "absoluteString"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "DownloadFileDestination"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "HTTPMethod"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- ["Ps23CustomStringConvertible", "URLRequest"]
+- ["Ps23CustomStringConvertible", "URLString"]
+- !private ["Ps23CustomStringConvertible", "absoluteString"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mutableCopy"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs19DictionaryGenerator", "Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps9Equatable", "HTTPMethod"]
+- !private ["Ps9Equatable", "URL"]
+- ["Ps9Equatable", "URLRequest"]
+- ["Ps9Equatable", "URLString"]
+- !private ["Ps9Equatable", "absoluteString"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mutableCopy"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "setValue"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "HTTPMethod"]
+- !private ["Ps8Hashable", "URL"]
+- ["Ps8Hashable", "URLRequest"]
+- ["Ps8Hashable", "URLString"]
+- !private ["Ps8Hashable", "absoluteString"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mutableCopy"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["C9Alamofire7Manager", "MultipartFormDataEncodingMemoryThreshold"]
+- ["C9Alamofire7Manager", "MultipartFormDataEncodingResult"]
+- !private ["C9Alamofire7Manager", "download"]
+- !private ["C9Alamofire7Manager", "request"]
+- !private ["C9Alamofire7Manager", "sharedInstance"]
+- !private ["C9Alamofire7Manager", "upload"]
+- !private ["O9Alamofire6Method", "deinit"]
+- !private ["O9Alamofire6Method", "rawValue"]
+- ["Ps14MirrorPathType", "URLString"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "URL"]
+- ["PSo8NSCoding", "URLRequest"]
+- ["PSo8NSCoding", "URLString"]
+- !private ["PSo8NSCoding", "absoluteString"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "mutableCopy"]
+- !private ["PSo8NSCoding", "setValue"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "URL"]
+- ["PSo9NSCopying", "URLRequest"]
+- ["PSo9NSCopying", "URLString"]
+- !private ["PSo9NSCopying", "absoluteString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "mutableCopy"]
+- !private ["PSo9NSCopying", "setValue"]
+- !private ["CSo6NSData", "deinit"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "URL"]
+- ["PSo16NSMutableCopying", "URLRequest"]
+- ["PSo16NSMutableCopying", "URLString"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "mutableCopy"]
+- !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo19NSMutableURLRequest", "setValue"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- ["CSo8NSObject", "NSMutableURLRequest"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "URLRequest"]
+- ["CSo8NSObject", "URLString"]
+- !private ["CSo8NSObject", "absoluteString"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mutableCopy"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- ["PSo16NSObjectProtocol", "URLRequest"]
+- ["PSo16NSObjectProtocol", "URLString"]
+- !private ["PSo16NSObjectProtocol", "absoluteString"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mutableCopy"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "URL"]
+- ["PSo14NSSecureCoding", "URLRequest"]
+- ["PSo14NSSecureCoding", "URLString"]
+- !private ["PSo14NSSecureCoding", "absoluteString"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "mutableCopy"]
+- !private ["PSo14NSSecureCoding", "setValue"]
+- ["CSo5NSURL", "String"]
+- ["CSo5NSURL", "URLString"]
+- !private ["CSo5NSURL", "absoluteString"]
+- ["CSo5NSURL", "deinit"]
+- !private ["CSo5NSURL", "init"]
+- ["CSo15NSURLComponents", "String"]
+- !private ["CSo15NSURLComponents", "URL"]
+- ["CSo15NSURLComponents", "URLString"]
+- ["CSo15NSURLComponents", "deinit"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- ["CSo12NSURLRequest", "NSMutableURLRequest"]
+- ["CSo12NSURLRequest", "String"]
+- !private ["CSo12NSURLRequest", "URL"]
+- ["CSo12NSURLRequest", "URLRequest"]
+- ["CSo12NSURLRequest", "URLString"]
+- ["CSo12NSURLRequest", "deinit"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLRequest", "mutableCopy"]
+- !private ["CSo12NSURLRequest", "setValue"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- ["Ps16OutputStreamType", "URLString"]
+- !private ["O9Alamofire17ParameterEncoding", "URL"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- ["C9Alamofire7Request", "DownloadFileDestination"]
+- !private ["Ps12SequenceType", "Generator"]
+- ["Ps10Streamable", "URLString"]
+- ["SS", "String"]
+- ["SS", "URLString"]
+- ["SS", "deinit"]
+- ["Ps30StringInterpolationConvertible", "URLString"]
+- ["Ps24StringLiteralConvertible", "URLString"]
+- !private ["P9Alamofire21URLRequestConvertible", "HTTPMethod"]
+- ["P9Alamofire21URLRequestConvertible", "NSMutableURLRequest"]
+- !private ["P9Alamofire21URLRequestConvertible", "URL"]
+- ["P9Alamofire21URLRequestConvertible", "URLRequest"]
+- ["P9Alamofire21URLRequestConvertible", "URLString"]
+- !private ["P9Alamofire21URLRequestConvertible", "init"]
+- !private ["P9Alamofire21URLRequestConvertible", "mutableCopy"]
+- !private ["P9Alamofire21URLRequestConvertible", "setValue"]
+- ["P9Alamofire21URLRequestConvertible", ""]
+- !private ["P9Alamofire20URLStringConvertible", "HTTPMethod"]
+- ["P9Alamofire20URLStringConvertible", "String"]
+- !private ["P9Alamofire20URLStringConvertible", "URL"]
+- ["P9Alamofire20URLStringConvertible", "URLRequest"]
+- ["P9Alamofire20URLStringConvertible", "URLString"]
+- !private ["P9Alamofire20URLStringConvertible", "absoluteString"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "mutableCopy"]
+- !private ["P9Alamofire20URLStringConvertible", "setValue"]
+- ["P9Alamofire20URLStringConvertible", ""]
+- ["Ps31UnicodeScalarLiteralConvertible", "URLString"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "URLString"]
+- ["Ps32_BuiltinStringLiteralConvertible", "URLString"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "URLString"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "URLString"]
+- ["Ps32_FileReferenceLiteralConvertible", "URLString"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "absoluteString"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- ["Ps21_ObjectiveCBridgeable", "URLString"]
+- !private ["Ps12_Reflectable", "Generator"]
+- ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "URLString"]
+- !private ["Ps12_Reflectable", "absoluteString"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs19DictionaryGenerator"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- "C9Alamofire7Manager"
+- !private "O9Alamofire6Method"
+- "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo6NSData"
+- "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo5NSURL"
+- "CSo15NSURLComponents"
+- "CSo12NSURLRequest"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- "Ps16OutputStreamType"
+- !private "O9Alamofire17ParameterEncoding"
+- !private "Ps16RawRepresentable"
+- "C9Alamofire7Request"
+- !private "Ps12SequenceType"
+- "Ps10Streamable"
+- "SS"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
+- "P9Alamofire21URLRequestConvertible"
+- "P9Alamofire20URLStringConvertible"
+- "Ps31UnicodeScalarLiteralConvertible"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "Ps32_FileReferenceLiteralConvertible"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "013cc204eb0677cd9e3b28e2020809f0"

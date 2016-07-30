@@ -26,12 +26,15 @@ class ChatViewController : UIViewController {
         userLavel.text = "u\(userId)_mu\(merchantUserId)"
         
         // ルーム情報を監視.
-        redishFirebase.startMonitor(merchantUserId,limit:FIREBASE_LIMIT,call: { snapshot in
-            if let name = snapshot.value!.objectForKey("sender") as? String,
-                message = snapshot.value!.objectForKey("message") as? String {
-                    self.textView.text = "\(self.textView.text)\n\(name) : \(message)"
+        redishFirebase.startMonitor(merchantUserId, limit:FIREBASE_LIMIT,call: { snapshot in
+                if let name = snapshot.value!.objectForKey("sender") as? String,
+                    message = snapshot.value!.objectForKey("message") as? String {
+                        self.textView.text = "\(self.textView.text)\n\(name) : \(message)"
+                }
+            },opponentCall: { snapshot in
+                debugPrint( "#既読監視:\(snapshot)" )
             }
-        })
+        )
         
         
     }
@@ -45,7 +48,7 @@ class ChatViewController : UIViewController {
         let text:String = messageText.text!
         messageText.text = ""
         if text.characters.count > 0 {
-            redishFirebase.send(merchantUserId, message: text)
+            redishFirebase.send(merchantUserId, type: 1, message: text)
         }
     }
 }

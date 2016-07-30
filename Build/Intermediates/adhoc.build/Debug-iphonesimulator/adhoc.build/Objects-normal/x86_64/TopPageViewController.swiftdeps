@@ -6,122 +6,143 @@ provides-nominal:
 provides-member:
 - ["C5adhoc21TopPageViewController", ""]
 provides-dynamic-lookup:
-- "room1_u1_mu1_down"
-- "room2_lavel"
-- "room2_u1_mu2_down"
-- "room1_u1_mu1"
-- "room1_label"
 - "room2_u1_mu2"
 - "viewDidLoad"
+- "room2_u1_mu2_down"
+- "room2_lavel"
+- "room1_label"
+- "room1_u1_mu1"
+- "room1_u1_mu1_down"
 depends-top-level:
+- "UIViewController"
+- !private "redishFirebase"
+- "AnyObject"
 - "UILabel"
 - !private "merchantUserId"
 - "UIButton"
+- !private "redishFirebaseRoomCache"
 - "TopPageViewController"
-- !private "redishFirebase"
-- "UIViewController"
-- !private "!"
-- !private "userId"
-- "AnyObject"
 - !private "StringLiteralType"
-- !private "=="
-- !private "String"
+- !private "!="
 depends-member:
-- !private ["PSs9AnyObject", "create"]
-- !private ["PSs9AnyObject", "createRoom"]
-- !private ["PSs9AnyObject", "deinit"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "isCreate"]
-- !private ["PSs9AnyObject", "merchantUserId"]
-- ["PSs9AnyObject", "moveRoom"]
-- !private ["PSs9AnyObject", "objectForKey"]
-- !private ["PSs9AnyObject", "redishFirebase"]
-- ["PSs9AnyObject", "room1_label"]
-- ["PSs9AnyObject", "room1_u1_mu1"]
-- ["PSs9AnyObject", "room1_u1_mu1_down"]
-- ["PSs9AnyObject", "room2_lavel"]
-- ["PSs9AnyObject", "room2_u1_mu2"]
-- ["PSs9AnyObject", "room2_u1_mu2_down"]
-- !private ["PSs9AnyObject", "text"]
-- !private ["PSs9AnyObject", "userId"]
-- !private ["PSs9AnyObject", "value"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "createRoom"]
+- !private ["Ps9AnyObject", "description"]
+- !private ["Ps9AnyObject", "get"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "merchantUserId"]
+- ["Ps9AnyObject", "moveRoom"]
+- !private ["Ps9AnyObject", "redishFirebase"]
+- !private ["Ps9AnyObject", "redishFirebaseRoomCache"]
+- ["Ps9AnyObject", "room1_label"]
+- ["Ps9AnyObject", "room1_u1_mu1"]
+- ["Ps9AnyObject", "room1_u1_mu1_down"]
+- ["Ps9AnyObject", "room2_lavel"]
+- ["Ps9AnyObject", "room2_u1_mu2"]
+- ["Ps9AnyObject", "room2_u1_mu2_down"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "merchantUserId"]
-- ["PSs11CVarArgType", "moveRoom"]
-- !private ["PSs11CVarArgType", "redishFirebase"]
-- ["PSs11CVarArgType", "room1_label"]
-- ["PSs11CVarArgType", "room1_u1_mu1"]
-- ["PSs11CVarArgType", "room1_u1_mu1_down"]
-- ["PSs11CVarArgType", "room2_lavel"]
-- ["PSs11CVarArgType", "room2_u1_mu2"]
-- ["PSs11CVarArgType", "room2_u1_mu2_down"]
-- !private ["PSs11CVarArgType", "text"]
-- !private ["PSs11CVarArgType", "userId"]
-- !private ["PSs11CVarArgType", "value"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs28CustomDebugStringConvertible", "Some"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "merchantUserId"]
-- ["PSs23CustomStringConvertible", "moveRoom"]
-- !private ["PSs23CustomStringConvertible", "redishFirebase"]
-- ["PSs23CustomStringConvertible", "room1_label"]
-- ["PSs23CustomStringConvertible", "room1_u1_mu1"]
-- ["PSs23CustomStringConvertible", "room1_u1_mu1_down"]
-- ["PSs23CustomStringConvertible", "room2_lavel"]
-- ["PSs23CustomStringConvertible", "room2_u1_mu2"]
-- ["PSs23CustomStringConvertible", "room2_u1_mu2_down"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- !private ["PSs23CustomStringConvertible", "userId"]
-- !private ["PSs23CustomStringConvertible", "value"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "merchantUserId"]
-- ["PSs9Equatable", "moveRoom"]
-- !private ["PSs9Equatable", "redishFirebase"]
-- ["PSs9Equatable", "room1_label"]
-- ["PSs9Equatable", "room1_u1_mu1"]
-- ["PSs9Equatable", "room1_u1_mu1_down"]
-- ["PSs9Equatable", "room2_lavel"]
-- ["PSs9Equatable", "room2_u1_mu2"]
-- ["PSs9Equatable", "room2_u1_mu2_down"]
-- !private ["PSs9Equatable", "text"]
-- !private ["PSs9Equatable", "userId"]
-- !private ["PSs9Equatable", "value"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["CSo15FIRDataSnapshot", "value"]
-- !private ["C5adhoc24FirebaseByRedishUserApps", "create"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "merchantUserId"]
+- ["Ps11CVarArgType", "moveRoom"]
+- !private ["Ps11CVarArgType", "redishFirebase"]
+- !private ["Ps11CVarArgType", "redishFirebaseRoomCache"]
+- ["Ps11CVarArgType", "room1_label"]
+- ["Ps11CVarArgType", "room1_u1_mu1"]
+- ["Ps11CVarArgType", "room1_u1_mu1_down"]
+- ["Ps11CVarArgType", "room2_lavel"]
+- ["Ps11CVarArgType", "room2_u1_mu2"]
+- ["Ps11CVarArgType", "room2_u1_mu2_down"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "merchantUserId"]
+- ["Ps28CustomDebugStringConvertible", "moveRoom"]
+- !private ["Ps28CustomDebugStringConvertible", "redishFirebase"]
+- !private ["Ps28CustomDebugStringConvertible", "redishFirebaseRoomCache"]
+- ["Ps28CustomDebugStringConvertible", "room1_label"]
+- ["Ps28CustomDebugStringConvertible", "room1_u1_mu1"]
+- ["Ps28CustomDebugStringConvertible", "room1_u1_mu1_down"]
+- ["Ps28CustomDebugStringConvertible", "room2_lavel"]
+- ["Ps28CustomDebugStringConvertible", "room2_u1_mu2"]
+- ["Ps28CustomDebugStringConvertible", "room2_u1_mu2_down"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "merchantUserId"]
+- ["Ps23CustomStringConvertible", "moveRoom"]
+- !private ["Ps23CustomStringConvertible", "redishFirebase"]
+- !private ["Ps23CustomStringConvertible", "redishFirebaseRoomCache"]
+- ["Ps23CustomStringConvertible", "room1_label"]
+- ["Ps23CustomStringConvertible", "room1_u1_mu1"]
+- ["Ps23CustomStringConvertible", "room1_u1_mu1_down"]
+- ["Ps23CustomStringConvertible", "room2_lavel"]
+- ["Ps23CustomStringConvertible", "room2_u1_mu2"]
+- ["Ps23CustomStringConvertible", "room2_u1_mu2_down"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "merchantUserId"]
+- ["Ps9Equatable", "moveRoom"]
+- !private ["Ps9Equatable", "redishFirebase"]
+- !private ["Ps9Equatable", "redishFirebaseRoomCache"]
+- ["Ps9Equatable", "room1_label"]
+- ["Ps9Equatable", "room1_u1_mu1"]
+- ["Ps9Equatable", "room1_u1_mu1_down"]
+- ["Ps9Equatable", "room2_lavel"]
+- ["Ps9Equatable", "room2_u1_mu2"]
+- ["Ps9Equatable", "room2_u1_mu2_down"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
 - !private ["C5adhoc24FirebaseByRedishUserApps", "createRoom"]
-- !private ["C5adhoc24FirebaseByRedishUserApps", "isCreate"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "merchantUserId"]
-- ["PSs8Hashable", "moveRoom"]
-- !private ["PSs8Hashable", "redishFirebase"]
-- ["PSs8Hashable", "room1_label"]
-- ["PSs8Hashable", "room1_u1_mu1"]
-- ["PSs8Hashable", "room1_u1_mu1_down"]
-- ["PSs8Hashable", "room2_lavel"]
-- ["PSs8Hashable", "room2_u1_mu2"]
-- ["PSs8Hashable", "room2_u1_mu2_down"]
-- !private ["PSs8Hashable", "text"]
-- !private ["PSs8Hashable", "userId"]
-- !private ["PSs8Hashable", "value"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["C5adhoc17FirebaseRoomCache", "get"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "merchantUserId"]
+- ["Ps8Hashable", "moveRoom"]
+- !private ["Ps8Hashable", "redishFirebase"]
+- !private ["Ps8Hashable", "redishFirebaseRoomCache"]
+- ["Ps8Hashable", "room1_label"]
+- ["Ps8Hashable", "room1_u1_mu1"]
+- ["Ps8Hashable", "room1_u1_mu1_down"]
+- ["Ps8Hashable", "room2_lavel"]
+- ["Ps8Hashable", "room2_u1_mu2"]
+- ["Ps8Hashable", "room2_u1_mu2_down"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "merchantUserId"]
 - ["PSo8NSCoding", "moveRoom"]
 - !private ["PSo8NSCoding", "redishFirebase"]
+- !private ["PSo8NSCoding", "redishFirebaseRoomCache"]
 - ["PSo8NSCoding", "room1_label"]
 - ["PSo8NSCoding", "room1_u1_mu1"]
 - ["PSo8NSCoding", "room1_u1_mu1_down"]
@@ -129,30 +150,29 @@ depends-member:
 - ["PSo8NSCoding", "room2_u1_mu2"]
 - ["PSo8NSCoding", "room2_u1_mu2_down"]
 - !private ["PSo8NSCoding", "text"]
-- !private ["PSo8NSCoding", "userId"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "merchantUserId"]
 - ["PSo26NSExtensionRequestHandling", "moveRoom"]
 - !private ["PSo26NSExtensionRequestHandling", "redishFirebase"]
+- !private ["PSo26NSExtensionRequestHandling", "redishFirebaseRoomCache"]
 - ["PSo26NSExtensionRequestHandling", "room1_label"]
 - ["PSo26NSExtensionRequestHandling", "room1_u1_mu1"]
 - ["PSo26NSExtensionRequestHandling", "room1_u1_mu1_down"]
 - ["PSo26NSExtensionRequestHandling", "room2_lavel"]
 - ["PSo26NSExtensionRequestHandling", "room2_u1_mu2"]
 - ["PSo26NSExtensionRequestHandling", "room2_u1_mu2_down"]
-- !private ["PSo26NSExtensionRequestHandling", "userId"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "merchantUserId"]
 - ["CSo8NSObject", "moveRoom"]
 - !private ["CSo8NSObject", "redishFirebase"]
+- !private ["CSo8NSObject", "redishFirebaseRoomCache"]
 - ["CSo8NSObject", "room1_label"]
 - ["CSo8NSObject", "room1_u1_mu1"]
 - ["CSo8NSObject", "room1_u1_mu1_down"]
@@ -160,13 +180,12 @@ depends-member:
 - ["CSo8NSObject", "room2_u1_mu2"]
 - ["CSo8NSObject", "room2_u1_mu2_down"]
 - !private ["CSo8NSObject", "text"]
-- !private ["CSo8NSObject", "userId"]
-- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "merchantUserId"]
 - ["PSo16NSObjectProtocol", "moveRoom"]
 - !private ["PSo16NSObjectProtocol", "redishFirebase"]
+- !private ["PSo16NSObjectProtocol", "redishFirebaseRoomCache"]
 - ["PSo16NSObjectProtocol", "room1_label"]
 - ["PSo16NSObjectProtocol", "room1_u1_mu1"]
 - ["PSo16NSObjectProtocol", "room1_u1_mu1_down"]
@@ -174,16 +193,20 @@ depends-member:
 - ["PSo16NSObjectProtocol", "room2_u1_mu2"]
 - ["PSo16NSObjectProtocol", "room2_u1_mu2_down"]
 - !private ["PSo16NSObjectProtocol", "text"]
-- !private ["PSo16NSObjectProtocol", "userId"]
-- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSs21NilLiteralConvertible", "Some"]
-- !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["SS", "deinit"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
 - ["C5adhoc21TopPageViewController", "AnyObject"]
-- !private ["C5adhoc21TopPageViewController", "String"]
 - ["C5adhoc21TopPageViewController", "UIButton"]
 - ["C5adhoc21TopPageViewController", "UILabel"]
 - ["C5adhoc21TopPageViewController", "deinit"]
@@ -191,13 +214,13 @@ depends-member:
 - !private ["C5adhoc21TopPageViewController", "merchantUserId"]
 - !private ["C5adhoc21TopPageViewController", "moveRoom"]
 - !private ["C5adhoc21TopPageViewController", "redishFirebase"]
+- !private ["C5adhoc21TopPageViewController", "redishFirebaseRoomCache"]
 - ["C5adhoc21TopPageViewController", "room1_label"]
 - ["C5adhoc21TopPageViewController", "room1_u1_mu1"]
 - ["C5adhoc21TopPageViewController", "room1_u1_mu1_down"]
 - ["C5adhoc21TopPageViewController", "room2_lavel"]
 - ["C5adhoc21TopPageViewController", "room2_u1_mu2"]
 - ["C5adhoc21TopPageViewController", "room2_u1_mu2_down"]
-- !private ["C5adhoc21TopPageViewController", "userId"]
 - ["C5adhoc21TopPageViewController", "viewDidLoad"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
@@ -205,6 +228,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "merchantUserId"]
 - ["PSo21UIAppearanceContainer", "moveRoom"]
 - !private ["PSo21UIAppearanceContainer", "redishFirebase"]
+- !private ["PSo21UIAppearanceContainer", "redishFirebaseRoomCache"]
 - ["PSo21UIAppearanceContainer", "room1_label"]
 - ["PSo21UIAppearanceContainer", "room1_u1_mu1"]
 - ["PSo21UIAppearanceContainer", "room1_u1_mu1_down"]
@@ -212,20 +236,19 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "room2_u1_mu2"]
 - ["PSo21UIAppearanceContainer", "room2_u1_mu2_down"]
 - !private ["PSo21UIAppearanceContainer", "text"]
-- !private ["PSo21UIAppearanceContainer", "userId"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "merchantUserId"]
 - ["PSo18UIContentContainer", "moveRoom"]
 - !private ["PSo18UIContentContainer", "redishFirebase"]
+- !private ["PSo18UIContentContainer", "redishFirebaseRoomCache"]
 - ["PSo18UIContentContainer", "room1_label"]
 - ["PSo18UIContentContainer", "room1_u1_mu1"]
 - ["PSo18UIContentContainer", "room1_u1_mu1_down"]
 - ["PSo18UIContentContainer", "room2_lavel"]
 - ["PSo18UIContentContainer", "room2_u1_mu2"]
 - ["PSo18UIContentContainer", "room2_u1_mu2_down"]
-- !private ["PSo18UIContentContainer", "userId"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -234,6 +257,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "merchantUserId"]
 - ["PSo18UIFocusEnvironment", "moveRoom"]
 - !private ["PSo18UIFocusEnvironment", "redishFirebase"]
+- !private ["PSo18UIFocusEnvironment", "redishFirebaseRoomCache"]
 - ["PSo18UIFocusEnvironment", "room1_label"]
 - ["PSo18UIFocusEnvironment", "room1_u1_mu1"]
 - ["PSo18UIFocusEnvironment", "room1_u1_mu1_down"]
@@ -241,18 +265,17 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "room2_u1_mu2"]
 - ["PSo18UIFocusEnvironment", "room2_u1_mu2_down"]
 - !private ["PSo18UIFocusEnvironment", "text"]
-- !private ["PSo18UIFocusEnvironment", "userId"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
-- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "merchantUserId"]
 - ["CSo11UIResponder", "moveRoom"]
 - !private ["CSo11UIResponder", "redishFirebase"]
+- !private ["CSo11UIResponder", "redishFirebaseRoomCache"]
 - ["CSo11UIResponder", "room1_label"]
 - ["CSo11UIResponder", "room1_u1_mu1"]
 - ["CSo11UIResponder", "room1_u1_mu1_down"]
@@ -260,25 +283,25 @@ depends-member:
 - ["CSo11UIResponder", "room2_u1_mu2"]
 - ["CSo11UIResponder", "room2_u1_mu2_down"]
 - !private ["CSo11UIResponder", "text"]
-- !private ["CSo11UIResponder", "userId"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "merchantUserId"]
 - ["PSo16UIStateRestoring", "moveRoom"]
 - !private ["PSo16UIStateRestoring", "redishFirebase"]
+- !private ["PSo16UIStateRestoring", "redishFirebaseRoomCache"]
 - ["PSo16UIStateRestoring", "room1_label"]
 - ["PSo16UIStateRestoring", "room1_u1_mu1"]
 - ["PSo16UIStateRestoring", "room1_u1_mu1_down"]
 - ["PSo16UIStateRestoring", "room2_lavel"]
 - ["PSo16UIStateRestoring", "room2_u1_mu2"]
 - ["PSo16UIStateRestoring", "room2_u1_mu2_down"]
-- !private ["PSo16UIStateRestoring", "userId"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "merchantUserId"]
 - ["PSo18UITraitEnvironment", "moveRoom"]
 - !private ["PSo18UITraitEnvironment", "redishFirebase"]
+- !private ["PSo18UITraitEnvironment", "redishFirebaseRoomCache"]
 - ["PSo18UITraitEnvironment", "room1_label"]
 - ["PSo18UITraitEnvironment", "room1_u1_mu1"]
 - ["PSo18UITraitEnvironment", "room1_u1_mu1_down"]
@@ -286,51 +309,57 @@ depends-member:
 - ["PSo18UITraitEnvironment", "room2_u1_mu2"]
 - ["PSo18UITraitEnvironment", "room2_u1_mu2_down"]
 - !private ["PSo18UITraitEnvironment", "text"]
-- !private ["PSo18UITraitEnvironment", "userId"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
-- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "merchantUserId"]
 - ["CSo16UIViewController", "moveRoom"]
 - !private ["CSo16UIViewController", "redishFirebase"]
+- !private ["CSo16UIViewController", "redishFirebaseRoomCache"]
 - ["CSo16UIViewController", "room1_label"]
 - ["CSo16UIViewController", "room1_u1_mu1"]
 - ["CSo16UIViewController", "room1_u1_mu1_down"]
 - ["CSo16UIViewController", "room2_lavel"]
 - ["CSo16UIViewController", "room2_u1_mu2"]
 - ["CSo16UIViewController", "room2_u1_mu2_down"]
-- !private ["CSo16UIViewController", "userId"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "Some"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "text"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "text"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- !private "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- !private "CSo15FIRDataSnapshot"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
 - !private "C5adhoc24FirebaseByRedishUserApps"
-- "PSs8Hashable"
+- !private "C5adhoc17FirebaseRoomCache"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSs21NilLiteralConvertible"
 - !private "Sq"
-- !private "SS"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
 - "C5adhoc21TopPageViewController"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
@@ -345,11 +374,11 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
-- !private "objectForKey"
+- !private "description"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
@@ -358,6 +387,28 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUserInfo.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUser.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIREmailPasswordAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FirebaseAuth.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
@@ -367,22 +418,24 @@ depends-external:
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/module.modulemap"
 interface-hash: "d8967059c424f0caa1198bd0a8807e21"

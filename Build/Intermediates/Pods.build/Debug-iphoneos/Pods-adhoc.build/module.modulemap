@@ -1,6 +1,0 @@
-framework module Pods_adhoc {
-  umbrella header "Pods-adhoc-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,7 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "FIREBASE_LIMIT"
+- "MAX_ROOM_LIMIT"
+- "DOMAIN"
+- "USER_TOKEN"
 - "redishFirebase"
+- "redishFirebaseRoomCache"
+- "redishCustomToken"
 - "userId"
 - "merchantUserId"
 - "AppDelegate"
@@ -10,48 +15,69 @@ provides-nominal:
 provides-member:
 - ["C5adhoc11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
-- "applicationDidEnterBackground"
-- "application"
 - "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
 - "window"
+- "applicationWillResignActive"
 - "applicationWillTerminate"
+- "application"
 depends-top-level:
-- "FIREBASE_LIMIT"
 - "AppDelegate"
-- "UInt"
-- "UIWindow"
-- "UIApplication"
-- "FirebaseByRedishUserApps"
-- "merchantUserId"
-- "NSObject"
-- "Int"
-- "UIResponder"
-- "Bool"
-- !private "BooleanLiteralType"
+- "MAX_ROOM_LIMIT"
 - "redishFirebase"
-- "UIApplicationDelegate"
-- "userId"
+- "NSObject"
+- "UIWindow"
+- "RedishCustomAuth"
 - "AnyObject"
+- "UInt"
+- "Int"
+- "merchantUserId"
+- !private "NSDictionary"
+- "DOMAIN"
+- "UIApplication"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "FirebaseRoomCache"
+- "redishFirebaseRoomCache"
+- "FirebaseByRedishUserApps"
+- "Bool"
+- "String"
+- "FIREBASE_LIMIT"
+- "StringLiteralType"
+- "userId"
+- "USER_TOKEN"
+- "redishCustomToken"
 depends-member:
-- ["PSs9AnyObject", "application"]
-- ["PSs9AnyObject", "applicationDidBecomeActive"]
-- ["PSs9AnyObject", "applicationDidEnterBackground"]
-- ["PSs9AnyObject", "applicationDidFinishLaunching"]
-- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
-- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
-- ["PSs9AnyObject", "applicationSignificantTimeChange"]
-- ["PSs9AnyObject", "applicationWillEnterForeground"]
-- ["PSs9AnyObject", "applicationWillResignActive"]
-- ["PSs9AnyObject", "applicationWillTerminate"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "window"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "MAX_ROOM_LIMIT"]
+- ["Ps9AnyObject", "application"]
+- ["Ps9AnyObject", "applicationDidBecomeActive"]
+- ["Ps9AnyObject", "applicationDidEnterBackground"]
+- ["Ps9AnyObject", "applicationDidFinishLaunching"]
+- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9AnyObject", "applicationSignificantTimeChange"]
+- ["Ps9AnyObject", "applicationWillEnterForeground"]
+- ["Ps9AnyObject", "applicationWillResignActive"]
+- ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "create"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "redishFirebase"]
+- !private ["Ps9AnyObject", "redishFirebaseRoomCache"]
+- !private ["Ps9AnyObject", "update"]
+- !private ["Ps9AnyObject", "userId"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", "window"]
+- ["Ps9AnyObject", ""]
 - ["C5adhoc11AppDelegate", "AnyObject"]
 - ["C5adhoc11AppDelegate", "Bool"]
+- !private ["C5adhoc11AppDelegate", "Int"]
+- !private ["C5adhoc11AppDelegate", "MAX_ROOM_LIMIT"]
+- !private ["C5adhoc11AppDelegate", "NSDictionary"]
 - ["C5adhoc11AppDelegate", "NSObject"]
 - ["C5adhoc11AppDelegate", "UIApplication"]
 - ["C5adhoc11AppDelegate", "UIWindow"]
@@ -69,70 +95,136 @@ depends-member:
 - ["C5adhoc11AppDelegate", "applicationWillTerminate"]
 - ["C5adhoc11AppDelegate", "deinit"]
 - ["C5adhoc11AppDelegate", "init"]
+- !private ["C5adhoc11AppDelegate", "redishFirebase"]
+- !private ["C5adhoc11AppDelegate", "redishFirebaseRoomCache"]
+- !private ["C5adhoc11AppDelegate", "userId"]
 - ["C5adhoc11AppDelegate", "window"]
-- ["PSs11CVarArgType", "application"]
-- ["PSs11CVarArgType", "applicationDidBecomeActive"]
-- ["PSs11CVarArgType", "applicationDidEnterBackground"]
-- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
-- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
-- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
-- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
-- ["PSs11CVarArgType", "applicationWillEnterForeground"]
-- ["PSs11CVarArgType", "applicationWillResignActive"]
-- ["PSs11CVarArgType", "applicationWillTerminate"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "window"]
-- ["PSs11CVarArgType", ""]
-- ["PSs23CustomStringConvertible", "application"]
-- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
-- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
-- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
-- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
-- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
-- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
-- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
-- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
-- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "window"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "application"]
-- ["PSs9Equatable", "applicationDidBecomeActive"]
-- ["PSs9Equatable", "applicationDidEnterBackground"]
-- ["PSs9Equatable", "applicationDidFinishLaunching"]
-- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
-- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
-- ["PSs9Equatable", "applicationSignificantTimeChange"]
-- ["PSs9Equatable", "applicationWillEnterForeground"]
-- ["PSs9Equatable", "applicationWillResignActive"]
-- ["PSs9Equatable", "applicationWillTerminate"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "window"]
-- ["PSs9Equatable", ""]
+- !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Ps11CVarArgType", "Int"]
+- !private ["Ps11CVarArgType", "MAX_ROOM_LIMIT"]
+- ["Ps11CVarArgType", "application"]
+- ["Ps11CVarArgType", "applicationDidBecomeActive"]
+- ["Ps11CVarArgType", "applicationDidEnterBackground"]
+- ["Ps11CVarArgType", "applicationDidFinishLaunching"]
+- ["Ps11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["Ps11CVarArgType", "applicationSignificantTimeChange"]
+- ["Ps11CVarArgType", "applicationWillEnterForeground"]
+- ["Ps11CVarArgType", "applicationWillResignActive"]
+- ["Ps11CVarArgType", "applicationWillTerminate"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "redishFirebase"]
+- !private ["Ps11CVarArgType", "redishFirebaseRoomCache"]
+- !private ["Ps11CVarArgType", "userId"]
+- !private ["Ps11CVarArgType", "value"]
+- ["Ps11CVarArgType", "window"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "MAX_ROOM_LIMIT"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "application"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "redishFirebase"]
+- !private ["Ps28CustomDebugStringConvertible", "redishFirebaseRoomCache"]
+- !private ["Ps28CustomDebugStringConvertible", "userId"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", "window"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "MAX_ROOM_LIMIT"]
+- ["Ps23CustomStringConvertible", "application"]
+- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
+- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "redishFirebase"]
+- !private ["Ps23CustomStringConvertible", "redishFirebaseRoomCache"]
+- !private ["Ps23CustomStringConvertible", "userId"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- ["Ps23CustomStringConvertible", "window"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "MAX_ROOM_LIMIT"]
+- ["Ps9Equatable", "application"]
+- ["Ps9Equatable", "applicationDidBecomeActive"]
+- ["Ps9Equatable", "applicationDidEnterBackground"]
+- ["Ps9Equatable", "applicationDidFinishLaunching"]
+- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9Equatable", "applicationSignificantTimeChange"]
+- ["Ps9Equatable", "applicationWillEnterForeground"]
+- ["Ps9Equatable", "applicationWillResignActive"]
+- ["Ps9Equatable", "applicationWillTerminate"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "redishFirebase"]
+- !private ["Ps9Equatable", "redishFirebaseRoomCache"]
+- !private ["Ps9Equatable", "userId"]
+- !private ["Ps9Equatable", "value"]
+- ["Ps9Equatable", "window"]
+- ["Ps9Equatable", ""]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["C5adhoc24FirebaseByRedishUserApps", "create"]
 - ["C5adhoc24FirebaseByRedishUserApps", "init"]
-- ["PSs8Hashable", "application"]
-- ["PSs8Hashable", "applicationDidBecomeActive"]
-- ["PSs8Hashable", "applicationDidEnterBackground"]
-- ["PSs8Hashable", "applicationDidFinishLaunching"]
-- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
-- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
-- ["PSs8Hashable", "applicationSignificantTimeChange"]
-- ["PSs8Hashable", "applicationWillEnterForeground"]
-- ["PSs8Hashable", "applicationWillResignActive"]
-- ["PSs8Hashable", "applicationWillTerminate"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "window"]
-- ["PSs8Hashable", ""]
+- ["C5adhoc17FirebaseRoomCache", "init"]
+- !private ["C5adhoc17FirebaseRoomCache", "update"]
+- !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "MAX_ROOM_LIMIT"]
+- ["Ps8Hashable", "application"]
+- ["Ps8Hashable", "applicationDidBecomeActive"]
+- ["Ps8Hashable", "applicationDidEnterBackground"]
+- ["Ps8Hashable", "applicationDidFinishLaunching"]
+- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps8Hashable", "applicationSignificantTimeChange"]
+- ["Ps8Hashable", "applicationWillEnterForeground"]
+- ["Ps8Hashable", "applicationWillResignActive"]
+- ["Ps8Hashable", "applicationWillTerminate"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "redishFirebase"]
+- !private ["Ps8Hashable", "redishFirebaseRoomCache"]
+- !private ["Ps8Hashable", "userId"]
+- !private ["Ps8Hashable", "value"]
+- ["Ps8Hashable", "window"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "init"]
+- !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "init"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "init"]
+- !private ["Ps14MirrorPathType", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "MAX_ROOM_LIMIT"]
+- !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
@@ -149,7 +241,13 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "redishFirebase"]
+- !private ["CSo8NSObject", "redishFirebaseRoomCache"]
+- !private ["CSo8NSObject", "userId"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "MAX_ROOM_LIMIT"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -163,8 +261,22 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "redishFirebase"]
+- !private ["PSo16NSObjectProtocol", "redishFirebaseRoomCache"]
+- !private ["PSo16NSObjectProtocol", "userId"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "init"]
+- ["C5adhoc16RedishCustomAuth", "init"]
+- !private ["Ps17SignedIntegerType", "init"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["PSo21UIApplicationDelegate", "Int"]
+- !private ["PSo21UIApplicationDelegate", "MAX_ROOM_LIMIT"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -177,10 +289,16 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "redishFirebase"]
+- !private ["PSo21UIApplicationDelegate", "redishFirebaseRoomCache"]
+- !private ["PSo21UIApplicationDelegate", "userId"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "MAX_ROOM_LIMIT"]
+- !private ["CSo11UIResponder", "NSDictionary"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -197,20 +315,60 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "redishFirebase"]
+- !private ["CSo11UIResponder", "redishFirebaseRoomCache"]
+- !private ["CSo11UIResponder", "userId"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - "C5adhoc11AppDelegate"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "CSo15FIRDataSnapshot"
 - "C5adhoc24FirebaseByRedishUserApps"
-- "PSs8Hashable"
+- "C5adhoc17FirebaseRoomCache"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "P10SwiftyJSON17JSONSubscriptType"
+- !private "Ps14MirrorPathType"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Ps21NilLiteralConvertible"
+- !private "Sq"
+- !private "Ps21RandomAccessIndexType"
+- "C5adhoc16RedishCustomAuth"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -220,6 +378,28 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUserInfo.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRUser.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FIREmailPasswordAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAuth/FirebaseAuth/FirebaseAuth.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
@@ -229,22 +409,24 @@ depends-external:
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Firebase/Headers/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "feec177ca4712e3fe5fc147d2338baab"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/module.modulemap"
+interface-hash: "89cd71a7fb8519501c793c167b7db580"

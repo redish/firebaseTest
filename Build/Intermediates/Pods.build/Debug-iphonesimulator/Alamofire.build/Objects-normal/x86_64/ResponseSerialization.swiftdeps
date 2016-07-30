@@ -1,0 +1,596 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ResponseSerializerType"
+- "ResponseSerializer"
+provides-nominal:
+- "P9Alamofire22ResponseSerializerType"
+- "V9Alamofire18ResponseSerializer"
+provides-member:
+- ["P9Alamofire22ResponseSerializerType", ""]
+- ["V9Alamofire18ResponseSerializer", ""]
+- ["C9Alamofire7Request", ""]
+- ["C9Alamofire7Request", "response"]
+- ["C9Alamofire7Request", "response"]
+- ["C9Alamofire7Request", "dataResponseSerializer"]
+- ["C9Alamofire7Request", "responseData"]
+- ["C9Alamofire7Request", "stringResponseSerializer"]
+- ["C9Alamofire7Request", "responseString"]
+- ["C9Alamofire7Request", "JSONResponseSerializer"]
+- ["C9Alamofire7Request", "responseJSON"]
+- ["C9Alamofire7Request", "propertyListResponseSerializer"]
+- ["C9Alamofire7Request", "responsePropertyList"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "NSNull"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- "String"
+- "NSJSONReadingOptions"
+- !private "CFStringConvertEncodingToNSStringEncoding"
+- !private "Timeline"
+- "ResponseSerializerType"
+- !private "CFStringConvertIANACharSetNameToEncoding"
+- "NSPropertyListReadOptions"
+- "NSData"
+- "ErrorType"
+- !private "NSJSONSerialization"
+- "Response"
+- "ResponseSerializer"
+- "AnyObject"
+- !private "NSISOLatin1StringEncoding"
+- "Void"
+- "Request"
+- "Result"
+- !private "??"
+- !private "=="
+- "NSError"
+- !private "NSPropertyListSerialization"
+- "StringLiteralType"
+- "NSHTTPURLResponse"
+- !private "CFAbsoluteTimeGetCurrent"
+- "NSURLRequest"
+- "dispatch_queue_t"
+- !private ">"
+- !private "Error"
+- "NSStringEncoding"
+depends-member:
+- !private ["Ps9AnyObject", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps9AnyObject", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["Ps9AnyObject", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["Ps9AnyObject", "Error"]
+- !private ["Ps9AnyObject", "JSONObjectWithData"]
+- !private ["Ps9AnyObject", "JSONResponseSerializer"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSISOLatin1StringEncoding"]
+- !private ["Ps9AnyObject", "NSJSONSerialization"]
+- !private ["Ps9AnyObject", "NSNull"]
+- !private ["Ps9AnyObject", "NSPropertyListReadOptions"]
+- !private ["Ps9AnyObject", "NSPropertyListSerialization"]
+- !private ["Ps9AnyObject", "Request"]
+- !private ["Ps9AnyObject", "Response"]
+- !private ["Ps9AnyObject", "ResponseSerializer"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "Timeline"]
+- !private ["Ps9AnyObject", "addOperationWithBlock"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "dataResponseSerializer"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- !private ["Ps9AnyObject", "error"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initialResponseTime"]
+- !private ["Ps9AnyObject", "length"]
+- !private ["Ps9AnyObject", "propertyListResponseSerializer"]
+- !private ["Ps9AnyObject", "propertyListWithData"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "response"]
+- !private ["Ps9AnyObject", "statusCode"]
+- !private ["Ps9AnyObject", "stringResponseSerializer"]
+- !private ["Ps9AnyObject", "textEncodingName"]
+- !private ["Ps23ArrayLiteralConvertible", "AllowFragments"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "RawValue"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps22BidirectionalIndexType", "DataSerializationFailed"]
+- !private ["Ps22BidirectionalIndexType", "JSONSerializationFailed"]
+- !private ["Ps22BidirectionalIndexType", "PropertyListSerializationFailed"]
+- !private ["Ps22BidirectionalIndexType", "StringSerializationFailed"]
+- !private ["Ps21BitwiseOperationsType", "DataSerializationFailed"]
+- !private ["Ps21BitwiseOperationsType", "JSONSerializationFailed"]
+- !private ["Ps21BitwiseOperationsType", "PropertyListSerializationFailed"]
+- !private ["Ps21BitwiseOperationsType", "StringSerializationFailed"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSo8CAAction", "init"]
+- !private ["Ps11CVarArgType", "DataSerializationFailed"]
+- !private ["Ps11CVarArgType", "JSONObjectWithData"]
+- !private ["Ps11CVarArgType", "JSONSerializationFailed"]
+- !private ["Ps11CVarArgType", "PropertyListSerializationFailed"]
+- !private ["Ps11CVarArgType", "StringSerializationFailed"]
+- !private ["Ps11CVarArgType", "addOperationWithBlock"]
+- !private ["Ps11CVarArgType", "data"]
+- !private ["Ps11CVarArgType", "error"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "initialResponseTime"]
+- !private ["Ps11CVarArgType", "length"]
+- !private ["Ps11CVarArgType", "propertyListWithData"]
+- !private ["Ps11CVarArgType", "queue"]
+- !private ["Ps11CVarArgType", "statusCode"]
+- !private ["Ps11CVarArgType", "textEncodingName"]
+- !private ["Vs9Character", "deinit"]
+- !private ["OV9Alamofire5Error4Code", "DataSerializationFailed"]
+- !private ["OV9Alamofire5Error4Code", "JSONSerializationFailed"]
+- !private ["OV9Alamofire5Error4Code", "PropertyListSerializationFailed"]
+- !private ["OV9Alamofire5Error4Code", "StringSerializationFailed"]
+- !private ["Ps10Comparable", "DataSerializationFailed"]
+- !private ["Ps10Comparable", "JSONSerializationFailed"]
+- !private ["Ps10Comparable", "PropertyListSerializationFailed"]
+- !private ["Ps10Comparable", "StringSerializationFailed"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps28CustomDebugStringConvertible", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["Ps28CustomDebugStringConvertible", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["Ps28CustomDebugStringConvertible", "Error"]
+- !private ["Ps28CustomDebugStringConvertible", "Failure"]
+- !private ["Ps28CustomDebugStringConvertible", "JSONObjectWithData"]
+- !private ["Ps28CustomDebugStringConvertible", "JSONResponseSerializer"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "NSISOLatin1StringEncoding"]
+- !private ["Ps28CustomDebugStringConvertible", "NSJSONSerialization"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNull"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPropertyListReadOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPropertyListSerialization"]
+- !private ["Ps28CustomDebugStringConvertible", "Request"]
+- !private ["Ps28CustomDebugStringConvertible", "Response"]
+- !private ["Ps28CustomDebugStringConvertible", "ResponseSerializer"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "Success"]
+- !private ["Ps28CustomDebugStringConvertible", "Timeline"]
+- !private ["Ps28CustomDebugStringConvertible", "addOperationWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "dataResponseSerializer"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_async"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "initialResponseTime"]
+- !private ["Ps28CustomDebugStringConvertible", "length"]
+- !private ["Ps28CustomDebugStringConvertible", "propertyListResponseSerializer"]
+- !private ["Ps28CustomDebugStringConvertible", "propertyListWithData"]
+- !private ["Ps28CustomDebugStringConvertible", "queue"]
+- !private ["Ps28CustomDebugStringConvertible", "response"]
+- !private ["Ps28CustomDebugStringConvertible", "statusCode"]
+- !private ["Ps28CustomDebugStringConvertible", "stringResponseSerializer"]
+- !private ["Ps28CustomDebugStringConvertible", "textEncodingName"]
+- !private ["Ps23CustomStringConvertible", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps23CustomStringConvertible", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["Ps23CustomStringConvertible", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["Ps23CustomStringConvertible", "DataSerializationFailed"]
+- !private ["Ps23CustomStringConvertible", "Error"]
+- !private ["Ps23CustomStringConvertible", "Failure"]
+- !private ["Ps23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["Ps23CustomStringConvertible", "JSONResponseSerializer"]
+- !private ["Ps23CustomStringConvertible", "JSONSerializationFailed"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
+- !private ["Ps23CustomStringConvertible", "NSISOLatin1StringEncoding"]
+- !private ["Ps23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["Ps23CustomStringConvertible", "NSNull"]
+- !private ["Ps23CustomStringConvertible", "NSPropertyListReadOptions"]
+- !private ["Ps23CustomStringConvertible", "NSPropertyListSerialization"]
+- !private ["Ps23CustomStringConvertible", "PropertyListSerializationFailed"]
+- !private ["Ps23CustomStringConvertible", "Request"]
+- !private ["Ps23CustomStringConvertible", "Response"]
+- !private ["Ps23CustomStringConvertible", "ResponseSerializer"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "StringSerializationFailed"]
+- !private ["Ps23CustomStringConvertible", "Success"]
+- !private ["Ps23CustomStringConvertible", "Timeline"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addOperationWithBlock"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "dataResponseSerializer"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "dispatch_async"]
+- !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "initialResponseTime"]
+- !private ["Ps23CustomStringConvertible", "length"]
+- !private ["Ps23CustomStringConvertible", "propertyListResponseSerializer"]
+- !private ["Ps23CustomStringConvertible", "propertyListWithData"]
+- !private ["Ps23CustomStringConvertible", "queue"]
+- !private ["Ps23CustomStringConvertible", "response"]
+- !private ["Ps23CustomStringConvertible", "statusCode"]
+- !private ["Ps23CustomStringConvertible", "stringResponseSerializer"]
+- !private ["Ps23CustomStringConvertible", "textEncodingName"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "AllowFragments"]
+- !private ["Ps9Equatable", "DataSerializationFailed"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "JSONObjectWithData"]
+- !private ["Ps9Equatable", "JSONSerializationFailed"]
+- !private ["Ps9Equatable", "PropertyListSerializationFailed"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "StringSerializationFailed"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addOperationWithBlock"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "error"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "initialResponseTime"]
+- !private ["Ps9Equatable", "length"]
+- !private ["Ps9Equatable", "propertyListWithData"]
+- !private ["Ps9Equatable", "queue"]
+- !private ["Ps9Equatable", "statusCode"]
+- !private ["Ps9Equatable", "textEncodingName"]
+- !private ["V9Alamofire5Error", "error"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "DataSerializationFailed"]
+- !private ["Ps16ForwardIndexType", "JSONSerializationFailed"]
+- !private ["Ps16ForwardIndexType", "PropertyListSerializationFailed"]
+- !private ["Ps16ForwardIndexType", "StringSerializationFailed"]
+- !private ["Ps8Hashable", "DataSerializationFailed"]
+- !private ["Ps8Hashable", "JSONObjectWithData"]
+- !private ["Ps8Hashable", "JSONSerializationFailed"]
+- !private ["Ps8Hashable", "PropertyListSerializationFailed"]
+- !private ["Ps8Hashable", "StringSerializationFailed"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addOperationWithBlock"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "error"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "initialResponseTime"]
+- !private ["Ps8Hashable", "length"]
+- !private ["Ps8Hashable", "propertyListWithData"]
+- !private ["Ps8Hashable", "queue"]
+- !private ["Ps8Hashable", "statusCode"]
+- !private ["Ps8Hashable", "textEncodingName"]
+- !private ["SQ", "deinit"]
+- !private ["Si", "DataSerializationFailed"]
+- !private ["Si", "JSONSerializationFailed"]
+- !private ["Si", "PropertyListSerializationFailed"]
+- !private ["Si", "StringSerializationFailed"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "DataSerializationFailed"]
+- !private ["Ps21IntegerArithmeticType", "JSONSerializationFailed"]
+- !private ["Ps21IntegerArithmeticType", "PropertyListSerializationFailed"]
+- !private ["Ps21IntegerArithmeticType", "StringSerializationFailed"]
+- !private ["Ps25IntegerLiteralConvertible", "DataSerializationFailed"]
+- !private ["Ps25IntegerLiteralConvertible", "JSONSerializationFailed"]
+- !private ["Ps25IntegerLiteralConvertible", "PropertyListSerializationFailed"]
+- !private ["Ps25IntegerLiteralConvertible", "StringSerializationFailed"]
+- !private ["Ps11IntegerType", "DataSerializationFailed"]
+- !private ["Ps11IntegerType", "JSONSerializationFailed"]
+- !private ["Ps11IntegerType", "PropertyListSerializationFailed"]
+- !private ["Ps11IntegerType", "StringSerializationFailed"]
+- !private ["Ps14MirrorPathType", "DataSerializationFailed"]
+- !private ["Ps14MirrorPathType", "JSONSerializationFailed"]
+- !private ["Ps14MirrorPathType", "PropertyListSerializationFailed"]
+- !private ["Ps14MirrorPathType", "StringSerializationFailed"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "statusCode"]
+- !private ["PSo8NSCoding", "textEncodingName"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "statusCode"]
+- !private ["PSo9NSCopying", "textEncodingName"]
+- !private ["CSo6NSData", "init"]
+- !private ["CSo6NSData", "length"]
+- !private ["CSo17NSHTTPURLResponse", "statusCode"]
+- !private ["CSo17NSHTTPURLResponse", "textEncodingName"]
+- !private ["VSC20NSJSONReadingOptions", "AllowFragments"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["CSo6NSNull", "init"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- !private ["CSo8NSObject", "addOperationWithBlock"]
+- !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "error"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "initialResponseTime"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "propertyListWithData"]
+- !private ["CSo8NSObject", "queue"]
+- !private ["CSo8NSObject", "statusCode"]
+- !private ["CSo8NSObject", "textEncodingName"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "addOperationWithBlock"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "error"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "initialResponseTime"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "propertyListWithData"]
+- !private ["PSo16NSObjectProtocol", "queue"]
+- !private ["PSo16NSObjectProtocol", "statusCode"]
+- !private ["PSo16NSObjectProtocol", "textEncodingName"]
+- !private ["CSo16NSOperationQueue", "addOperationWithBlock"]
+- !private ["VSC31NSPropertyListMutabilityOptions", "Element"]
+- !private ["VSC31NSPropertyListMutabilityOptions", "RawValue"]
+- !private ["VSC31NSPropertyListMutabilityOptions", "init"]
+- !private ["CSo27NSPropertyListSerialization", "propertyListWithData"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "statusCode"]
+- !private ["PSo14NSSecureCoding", "textEncodingName"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo13NSURLResponse", "statusCode"]
+- !private ["CSo13NSURLResponse", "textEncodingName"]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "AllowFragments"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "RawValue"]
+- !private ["Ps13OptionSetType", "init"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "DataSerializationFailed"]
+- !private ["Ps21RandomAccessIndexType", "JSONSerializationFailed"]
+- !private ["Ps21RandomAccessIndexType", "PropertyListSerializationFailed"]
+- !private ["Ps21RandomAccessIndexType", "StringSerializationFailed"]
+- !private ["Ps16RawRepresentable", "AllowFragments"]
+- !private ["Ps16RawRepresentable", "DataSerializationFailed"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "JSONSerializationFailed"]
+- !private ["Ps16RawRepresentable", "PropertyListSerializationFailed"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "StringSerializationFailed"]
+- !private ["Ps16RawRepresentable", "init"]
+- ["C9Alamofire7Request", "AnyObject"]
+- !private ["C9Alamofire7Request", "CFAbsoluteTimeGetCurrent"]
+- !private ["C9Alamofire7Request", "CFStringConvertEncodingToNSStringEncoding"]
+- !private ["C9Alamofire7Request", "CFStringConvertIANACharSetNameToEncoding"]
+- !private ["C9Alamofire7Request", "Error"]
+- ["C9Alamofire7Request", "JSONResponseSerializer"]
+- ["C9Alamofire7Request", "NSData"]
+- ["C9Alamofire7Request", "NSError"]
+- ["C9Alamofire7Request", "NSHTTPURLResponse"]
+- !private ["C9Alamofire7Request", "NSISOLatin1StringEncoding"]
+- ["C9Alamofire7Request", "NSJSONReadingOptions"]
+- !private ["C9Alamofire7Request", "NSJSONSerialization"]
+- !private ["C9Alamofire7Request", "NSNull"]
+- ["C9Alamofire7Request", "NSPropertyListReadOptions"]
+- !private ["C9Alamofire7Request", "NSPropertyListSerialization"]
+- ["C9Alamofire7Request", "NSStringEncoding"]
+- ["C9Alamofire7Request", "NSURLRequest"]
+- !private ["C9Alamofire7Request", "Request"]
+- ["C9Alamofire7Request", "Response"]
+- ["C9Alamofire7Request", "ResponseSerializer"]
+- ["C9Alamofire7Request", "ResponseSerializerType"]
+- ["C9Alamofire7Request", "String"]
+- !private ["C9Alamofire7Request", "Timeline"]
+- ["C9Alamofire7Request", "Void"]
+- ["C9Alamofire7Request", "dataResponseSerializer"]
+- !private ["C9Alamofire7Request", "delegate"]
+- !private ["C9Alamofire7Request", "dispatch_async"]
+- !private ["C9Alamofire7Request", "dispatch_get_main_queue"]
+- ["C9Alamofire7Request", "dispatch_queue_t"]
+- !private ["C9Alamofire7Request", "endTime"]
+- ["C9Alamofire7Request", "propertyListResponseSerializer"]
+- !private ["C9Alamofire7Request", "request"]
+- ["C9Alamofire7Request", "response"]
+- ["C9Alamofire7Request", "responseData"]
+- ["C9Alamofire7Request", "responseJSON"]
+- ["C9Alamofire7Request", "responsePropertyList"]
+- ["C9Alamofire7Request", "responseString"]
+- !private ["C9Alamofire7Request", "startTime"]
+- ["C9Alamofire7Request", "stringResponseSerializer"]
+- !private ["V9Alamofire8Response", "init"]
+- ["V9Alamofire18ResponseSerializer", "Error"]
+- ["V9Alamofire18ResponseSerializer", "ErrorObject"]
+- ["V9Alamofire18ResponseSerializer", "NSData"]
+- ["V9Alamofire18ResponseSerializer", "NSError"]
+- ["V9Alamofire18ResponseSerializer", "NSHTTPURLResponse"]
+- ["V9Alamofire18ResponseSerializer", "NSURLRequest"]
+- ["V9Alamofire18ResponseSerializer", "Result"]
+- ["V9Alamofire18ResponseSerializer", "SerializedObject"]
+- ["V9Alamofire18ResponseSerializer", "Value"]
+- ["V9Alamofire18ResponseSerializer", "deinit"]
+- ["V9Alamofire18ResponseSerializer", "init"]
+- ["V9Alamofire18ResponseSerializer", "serializeResponse"]
+- ["P9Alamofire22ResponseSerializerType", "ErrorObject"]
+- ["P9Alamofire22ResponseSerializerType", "ErrorType"]
+- ["P9Alamofire22ResponseSerializerType", "NSData"]
+- ["P9Alamofire22ResponseSerializerType", "NSError"]
+- ["P9Alamofire22ResponseSerializerType", "NSHTTPURLResponse"]
+- ["P9Alamofire22ResponseSerializerType", "NSURLRequest"]
+- ["P9Alamofire22ResponseSerializerType", "Result"]
+- ["P9Alamofire22ResponseSerializerType", "SerializedObject"]
+- !private ["P9Alamofire22ResponseSerializerType", "init"]
+- ["P9Alamofire22ResponseSerializerType", "serializeResponse"]
+- ["P9Alamofire22ResponseSerializerType", ""]
+- !private ["O9Alamofire6Result", "Failure"]
+- !private ["O9Alamofire6Result", "Success"]
+- !private ["Ps14SetAlgebraType", "AllowFragments"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "RawValue"]
+- !private ["Ps14SetAlgebraType", "init"]
+- !private ["Ps17SignedIntegerType", "DataSerializationFailed"]
+- !private ["Ps17SignedIntegerType", "JSONSerializationFailed"]
+- !private ["Ps17SignedIntegerType", "PropertyListSerializationFailed"]
+- !private ["Ps17SignedIntegerType", "StringSerializationFailed"]
+- !private ["Ps16SignedNumberType", "DataSerializationFailed"]
+- !private ["Ps16SignedNumberType", "JSONSerializationFailed"]
+- !private ["Ps16SignedNumberType", "PropertyListSerializationFailed"]
+- !private ["Ps16SignedNumberType", "StringSerializationFailed"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "DataSerializationFailed"]
+- !private ["Ps10Strideable", "JSONSerializationFailed"]
+- !private ["Ps10Strideable", "PropertyListSerializationFailed"]
+- !private ["Ps10Strideable", "StringSerializationFailed"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "data"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "error"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "initialResponseTime"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "queue"]
+- !private ["V9Alamofire8Timeline", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "DataSerializationFailed"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "JSONSerializationFailed"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "PropertyListSerializationFailed"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "StringSerializationFailed"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "DataSerializationFailed"]
+- !private ["Ps14_Incrementable", "JSONSerializationFailed"]
+- !private ["Ps14_Incrementable", "PropertyListSerializationFailed"]
+- !private ["Ps14_Incrementable", "StringSerializationFailed"]
+- !private ["Ps22_IntegerArithmeticType", "DataSerializationFailed"]
+- !private ["Ps22_IntegerArithmeticType", "JSONSerializationFailed"]
+- !private ["Ps22_IntegerArithmeticType", "PropertyListSerializationFailed"]
+- !private ["Ps22_IntegerArithmeticType", "StringSerializationFailed"]
+- !private ["Ps12_IntegerType", "DataSerializationFailed"]
+- !private ["Ps12_IntegerType", "JSONSerializationFailed"]
+- !private ["Ps12_IntegerType", "PropertyListSerializationFailed"]
+- !private ["Ps12_IntegerType", "StringSerializationFailed"]
+- !private ["Ps21_ObjectiveCBridgeable", "DataSerializationFailed"]
+- !private ["Ps21_ObjectiveCBridgeable", "JSONSerializationFailed"]
+- !private ["Ps21_ObjectiveCBridgeable", "PropertyListSerializationFailed"]
+- !private ["Ps21_ObjectiveCBridgeable", "StringSerializationFailed"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "DataSerializationFailed"]
+- !private ["Ps22_RandomAccessAmbiguity", "JSONSerializationFailed"]
+- !private ["Ps22_RandomAccessAmbiguity", "PropertyListSerializationFailed"]
+- !private ["Ps22_RandomAccessAmbiguity", "StringSerializationFailed"]
+- !private ["Ps12_Reflectable", "DataSerializationFailed"]
+- !private ["Ps12_Reflectable", "JSONSerializationFailed"]
+- !private ["Ps12_Reflectable", "PropertyListSerializationFailed"]
+- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "StringSerializationFailed"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "DataSerializationFailed"]
+- !private ["Ps18_SignedIntegerType", "JSONSerializationFailed"]
+- !private ["Ps18_SignedIntegerType", "PropertyListSerializationFailed"]
+- !private ["Ps18_SignedIntegerType", "StringSerializationFailed"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "PSo8CAAction"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "OV9Alamofire5Error4Code"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "V9Alamofire5Error"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps8Hashable"
+- !private "SQ"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo17NSHTTPURLResponse"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "PSo16NSMutableCopying"
+- !private "CSo6NSNull"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "CSo16NSOperationQueue"
+- !private "VSC31NSPropertyListMutabilityOptions"
+- !private "CSo27NSPropertyListSerialization"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo13NSURLResponse"
+- !private "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- "C9Alamofire7Request"
+- !private "V9Alamofire8Response"
+- "V9Alamofire18ResponseSerializer"
+- "P9Alamofire22ResponseSerializerType"
+- !private "O9Alamofire6Result"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "CC9Alamofire7Request12TaskDelegate"
+- !private "V9Alamofire8Timeline"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "b7144f047b69d3d7670dec820063ef1a"

@@ -21,22 +21,15 @@ class TopPageViewController : UIViewController {
         room1_label.text = "メッセージなし"
         room2_lavel.text = "メッセージなし"
         
-        // 生成されていない場合処理.
-        if !redishFirebase.isCreate() {
-            
-            // 生成＋ユーザ情報の監視.
-            redishFirebase.create( userId,limit:1,call: { snapshot in
-                if let value:AnyObject! = snapshot.value!,
-                    room = value.objectForKey("room") as? String,
-                    lastMessage = value.objectForKey("last_message") as? String {
-                    if room == "u1_mu1" {
-                        self.room1_label.text = lastMessage
-                    } else if room == "u1_mu2" {
-                        self.room2_lavel.text = lastMessage
-                    }
-                }
-            })
+        var val = redishFirebaseRoomCache.get("u1_mu1")
+        if val != nil {
+            self.room1_label.text = val!["last_message"]?.description
         }
+        val = redishFirebaseRoomCache.get("u1_mu2")
+        if val != nil {
+            self.room2_lavel.text = val!["last_message"]?.description
+        }
+
     }
     
     @IBAction func room1_u1_mu1_down(sender: AnyObject) {

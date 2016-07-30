@@ -1,0 +1,537 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "OC9Alamofire7ManagerP33_3F0498BE88C21C8B4FD233684246DB1E10Uploadable"
+- "OC9Alamofire7Manager31MultipartFormDataEncodingResult"
+- "CC9Alamofire7Request18UploadTaskDelegate"
+provides-member:
+- ["C9Alamofire7Manager", ""]
+- ["OC9Alamofire7ManagerP33_3F0498BE88C21C8B4FD233684246DB1E10Uploadable", ""]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", ""]
+- ["C9Alamofire7Request", ""]
+- ["CC9Alamofire7Request18UploadTaskDelegate", ""]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "MultipartFormDataEncodingMemoryThreshold"]
+- ["C9Alamofire7Manager", "MultipartFormDataEncodingResult"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Manager", "upload"]
+- ["C9Alamofire7Request", "UploadTaskDelegate"]
+provides-dynamic-lookup:
+- "taskDidSendBodyData"
+- "uploadProgress"
+- "URLSession"
+- "uploadTask"
+depends-top-level:
+- "Request"
+- "Method"
+- !private "=="
+- "Void"
+- "NSURLSessionTask"
+- "MultipartFormData"
+- !private "NSUUID"
+- "UInt64"
+- "NSInputStream"
+- "NSURLSessionUploadTask"
+- "Int64"
+- !private "NSError"
+- "Bool"
+- "NSURL"
+- !private "&&"
+- "Manager"
+- !private "URLRequest"
+- !private "CFAbsoluteTimeGetCurrent"
+- "URLStringConvertible"
+- !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
+- !private "<"
+- !private "NSURLRequest"
+- "StringLiteralType"
+- !private "dispatch_get_global_queue"
+- "*"
+- !private "dispatch_sync"
+- "NSURLSession"
+- "ErrorType"
+- !private "dispatch_get_main_queue"
+- "BooleanLiteralType"
+- !private "NSFileManager"
+- !private "dispatch_async"
+- "URLRequestConvertible"
+- !private "!="
+- !private "NSTemporaryDirectory"
+- "String"
+- !private "!"
+- "NSData"
+depends-member:
+- !private ["Ps9AnyObject", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps9AnyObject", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
+- !private ["Ps9AnyObject", "Manager"]
+- !private ["Ps9AnyObject", "MultipartFormData"]
+- !private ["Ps9AnyObject", "MultipartFormDataEncodingMemoryThreshold"]
+- !private ["Ps9AnyObject", "MultipartFormDataEncodingResult"]
+- !private ["Ps9AnyObject", "NSFileManager"]
+- !private ["Ps9AnyObject", "NSTemporaryDirectory"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "NSUUID"]
+- !private ["Ps9AnyObject", "Request"]
+- !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
+- !private ["Ps9AnyObject", "URLRequest"]
+- ["Ps9AnyObject", "URLSession"]
+- !private ["Ps9AnyObject", "UUIDString"]
+- !private ["Ps9AnyObject", "completedUnitCount"]
+- !private ["Ps9AnyObject", "configuration"]
+- !private ["Ps9AnyObject", "contentLength"]
+- !private ["Ps9AnyObject", "contentType"]
+- !private ["Ps9AnyObject", "createDirectoryAtURL"]
+- !private ["Ps9AnyObject", "defaultManager"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_get_global_queue"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- !private ["Ps9AnyObject", "dispatch_sync"]
+- !private ["Ps9AnyObject", "encode"]
+- !private ["Ps9AnyObject", "identifier"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initialResponseTime"]
+- !private ["Ps9AnyObject", "progress"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "startRequestsImmediately"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "task"]
+- ["Ps9AnyObject", "taskDidSendBodyData"]
+- !private ["Ps9AnyObject", "taskNeedNewBodyStream"]
+- !private ["Ps9AnyObject", "totalUnitCount"]
+- !private ["Ps9AnyObject", "upload"]
+- ["Ps9AnyObject", "uploadProgress"]
+- ["Ps9AnyObject", "uploadTask"]
+- !private ["Ps9AnyObject", "uploadTaskWithRequest"]
+- !private ["Ps9AnyObject", "uploadTaskWithStreamedRequest"]
+- !private ["Ps9AnyObject", "writeEncodedDataToDisk"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
+- ["Ps11CVarArgType", "URLSession"]
+- !private ["Ps11CVarArgType", "UUIDString"]
+- !private ["Ps11CVarArgType", "completedUnitCount"]
+- !private ["Ps11CVarArgType", "configuration"]
+- !private ["Ps11CVarArgType", "createDirectoryAtURL"]
+- !private ["Ps11CVarArgType", "defaultManager"]
+- !private ["Ps11CVarArgType", "identifier"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "initialResponseTime"]
+- !private ["Ps11CVarArgType", "progress"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps11CVarArgType", "subscript"]
+- !private ["Ps11CVarArgType", "task"]
+- ["Ps11CVarArgType", "taskDidSendBodyData"]
+- !private ["Ps11CVarArgType", "taskNeedNewBodyStream"]
+- !private ["Ps11CVarArgType", "totalUnitCount"]
+- ["Ps11CVarArgType", "uploadProgress"]
+- ["Ps11CVarArgType", "uploadTask"]
+- !private ["Ps11CVarArgType", "uploadTaskWithRequest"]
+- !private ["Ps11CVarArgType", "uploadTaskWithStreamedRequest"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "CFAbsoluteTimeGetCurrent"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
+- ["Ps28CustomDebugStringConvertible", "URLSession"]
+- !private ["Ps28CustomDebugStringConvertible", "UUIDString"]
+- !private ["Ps28CustomDebugStringConvertible", "completedUnitCount"]
+- !private ["Ps28CustomDebugStringConvertible", "configuration"]
+- !private ["Ps28CustomDebugStringConvertible", "createDirectoryAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultManager"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "initialResponseTime"]
+- !private ["Ps28CustomDebugStringConvertible", "progress"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "task"]
+- ["Ps28CustomDebugStringConvertible", "taskDidSendBodyData"]
+- !private ["Ps28CustomDebugStringConvertible", "taskNeedNewBodyStream"]
+- !private ["Ps28CustomDebugStringConvertible", "totalUnitCount"]
+- ["Ps28CustomDebugStringConvertible", "uploadProgress"]
+- ["Ps28CustomDebugStringConvertible", "uploadTask"]
+- !private ["Ps28CustomDebugStringConvertible", "uploadTaskWithRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "uploadTaskWithStreamedRequest"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
+- ["Ps23CustomStringConvertible", "URLSession"]
+- !private ["Ps23CustomStringConvertible", "UUIDString"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "completedUnitCount"]
+- !private ["Ps23CustomStringConvertible", "configuration"]
+- !private ["Ps23CustomStringConvertible", "createDirectoryAtURL"]
+- !private ["Ps23CustomStringConvertible", "defaultManager"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "initialResponseTime"]
+- !private ["Ps23CustomStringConvertible", "progress"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "task"]
+- ["Ps23CustomStringConvertible", "taskDidSendBodyData"]
+- !private ["Ps23CustomStringConvertible", "taskNeedNewBodyStream"]
+- !private ["Ps23CustomStringConvertible", "totalUnitCount"]
+- ["Ps23CustomStringConvertible", "uploadProgress"]
+- ["Ps23CustomStringConvertible", "uploadTask"]
+- !private ["Ps23CustomStringConvertible", "uploadTaskWithRequest"]
+- !private ["Ps23CustomStringConvertible", "uploadTaskWithStreamedRequest"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["CC9Alamofire7Request16DataTaskDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "Int64"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "NSURLSession"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "NSURLSessionTask"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "NSURLSessionUploadTask"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "URLSession"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "Void"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "init"]
+- !private ["CC9Alamofire7Request16DataTaskDelegate", "initialResponseTime"]
+- !private ["CC9Alamofire7Request16DataTaskDelegate", "progress"]
+- !private ["CC9Alamofire7Request16DataTaskDelegate", "task"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "taskDidSendBodyData"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "uploadProgress"]
+- ["CC9Alamofire7Request16DataTaskDelegate", "uploadTask"]
+- ["CC9Alamofire7Request16DataTaskDelegate", ""]
+- !private ["Ps9Equatable", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps9Equatable", "URLByAppendingPathComponent"]
+- ["Ps9Equatable", "URLSession"]
+- !private ["Ps9Equatable", "UUIDString"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "completedUnitCount"]
+- !private ["Ps9Equatable", "configuration"]
+- !private ["Ps9Equatable", "createDirectoryAtURL"]
+- !private ["Ps9Equatable", "defaultManager"]
+- !private ["Ps9Equatable", "identifier"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "initialResponseTime"]
+- !private ["Ps9Equatable", "progress"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "task"]
+- ["Ps9Equatable", "taskDidSendBodyData"]
+- !private ["Ps9Equatable", "taskNeedNewBodyStream"]
+- !private ["Ps9Equatable", "totalUnitCount"]
+- ["Ps9Equatable", "uploadProgress"]
+- ["Ps9Equatable", "uploadTask"]
+- !private ["Ps9Equatable", "uploadTaskWithRequest"]
+- !private ["Ps9Equatable", "uploadTaskWithStreamedRequest"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "CFAbsoluteTimeGetCurrent"]
+- !private ["Ps8Hashable", "URLByAppendingPathComponent"]
+- ["Ps8Hashable", "URLSession"]
+- !private ["Ps8Hashable", "UUIDString"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "completedUnitCount"]
+- !private ["Ps8Hashable", "configuration"]
+- !private ["Ps8Hashable", "createDirectoryAtURL"]
+- !private ["Ps8Hashable", "defaultManager"]
+- !private ["Ps8Hashable", "identifier"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "initialResponseTime"]
+- !private ["Ps8Hashable", "progress"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "task"]
+- ["Ps8Hashable", "taskDidSendBodyData"]
+- !private ["Ps8Hashable", "taskNeedNewBodyStream"]
+- !private ["Ps8Hashable", "totalUnitCount"]
+- ["Ps8Hashable", "uploadProgress"]
+- ["Ps8Hashable", "uploadTask"]
+- !private ["Ps8Hashable", "uploadTaskWithRequest"]
+- !private ["Ps8Hashable", "uploadTaskWithStreamedRequest"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- ["C9Alamofire7Manager", "Bool"]
+- !private ["C9Alamofire7Manager", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
+- ["C9Alamofire7Manager", "ErrorType"]
+- !private ["C9Alamofire7Manager", "Manager"]
+- ["C9Alamofire7Manager", "Method"]
+- ["C9Alamofire7Manager", "MultipartFormData"]
+- ["C9Alamofire7Manager", "MultipartFormDataEncodingMemoryThreshold"]
+- ["C9Alamofire7Manager", "MultipartFormDataEncodingResult"]
+- ["C9Alamofire7Manager", "NSData"]
+- !private ["C9Alamofire7Manager", "NSError"]
+- !private ["C9Alamofire7Manager", "NSFileManager"]
+- ["C9Alamofire7Manager", "NSInputStream"]
+- !private ["C9Alamofire7Manager", "NSTemporaryDirectory"]
+- ["C9Alamofire7Manager", "NSURL"]
+- !private ["C9Alamofire7Manager", "NSURLRequest"]
+- !private ["C9Alamofire7Manager", "NSURLSessionUploadTask"]
+- !private ["C9Alamofire7Manager", "NSUUID"]
+- ["C9Alamofire7Manager", "Request"]
+- ["C9Alamofire7Manager", "String"]
+- ["C9Alamofire7Manager", "UInt64"]
+- !private ["C9Alamofire7Manager", "URLRequest"]
+- ["C9Alamofire7Manager", "URLRequestConvertible"]
+- ["C9Alamofire7Manager", "URLStringConvertible"]
+- !private ["C9Alamofire7Manager", "Uploadable"]
+- ["C9Alamofire7Manager", "Void"]
+- !private ["C9Alamofire7Manager", "delegate"]
+- !private ["C9Alamofire7Manager", "dispatch_async"]
+- !private ["C9Alamofire7Manager", "dispatch_get_global_queue"]
+- !private ["C9Alamofire7Manager", "dispatch_get_main_queue"]
+- !private ["C9Alamofire7Manager", "dispatch_sync"]
+- !private ["C9Alamofire7Manager", "queue"]
+- !private ["C9Alamofire7Manager", "session"]
+- !private ["C9Alamofire7Manager", "startRequestsImmediately"]
+- ["C9Alamofire7Manager", "upload"]
+- !private ["C9Alamofire17MultipartFormData", "contentLength"]
+- !private ["C9Alamofire17MultipartFormData", "contentType"]
+- !private ["C9Alamofire17MultipartFormData", "encode"]
+- !private ["C9Alamofire17MultipartFormData", "init"]
+- !private ["C9Alamofire17MultipartFormData", "writeEncodedDataToDisk"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Bool"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "ErrorType"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Failure"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "NSURL"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Request"]
+- ["OC9Alamofire7Manager31MultipartFormDataEncodingResult", "Success"]
+- !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
+- !private ["PSo8NSCoding", "UUIDString"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setValue"]
+- !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
+- !private ["PSo9NSCopying", "UUIDString"]
+- !private ["PSo9NSCopying", "identifier"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "setValue"]
+- !private ["CSo13NSFileManager", "createDirectoryAtURL"]
+- !private ["CSo13NSFileManager", "defaultManager"]
+- !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["CSo19NSMutableURLRequest", "setValue"]
+- !private ["CSo8NSObject", "CFAbsoluteTimeGetCurrent"]
+- ["CSo8NSObject", "Int64"]
+- ["CSo8NSObject", "NSURLSession"]
+- ["CSo8NSObject", "NSURLSessionTask"]
+- ["CSo8NSObject", "NSURLSessionUploadTask"]
+- !private ["CSo8NSObject", "URLByAppendingPathComponent"]
+- ["CSo8NSObject", "URLSession"]
+- !private ["CSo8NSObject", "UUIDString"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "completedUnitCount"]
+- !private ["CSo8NSObject", "configuration"]
+- !private ["CSo8NSObject", "createDirectoryAtURL"]
+- !private ["CSo8NSObject", "defaultManager"]
+- !private ["CSo8NSObject", "identifier"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "initialResponseTime"]
+- !private ["CSo8NSObject", "progress"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "task"]
+- ["CSo8NSObject", "taskDidSendBodyData"]
+- !private ["CSo8NSObject", "taskNeedNewBodyStream"]
+- !private ["CSo8NSObject", "totalUnitCount"]
+- ["CSo8NSObject", "uploadProgress"]
+- ["CSo8NSObject", "uploadTask"]
+- !private ["CSo8NSObject", "uploadTaskWithRequest"]
+- !private ["CSo8NSObject", "uploadTaskWithStreamedRequest"]
+- !private ["PSo16NSObjectProtocol", "CFAbsoluteTimeGetCurrent"]
+- !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
+- ["PSo16NSObjectProtocol", "URLSession"]
+- !private ["PSo16NSObjectProtocol", "UUIDString"]
+- !private ["PSo16NSObjectProtocol", "completedUnitCount"]
+- !private ["PSo16NSObjectProtocol", "configuration"]
+- !private ["PSo16NSObjectProtocol", "createDirectoryAtURL"]
+- !private ["PSo16NSObjectProtocol", "defaultManager"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "initialResponseTime"]
+- !private ["PSo16NSObjectProtocol", "progress"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "task"]
+- ["PSo16NSObjectProtocol", "taskDidSendBodyData"]
+- !private ["PSo16NSObjectProtocol", "taskNeedNewBodyStream"]
+- !private ["PSo16NSObjectProtocol", "totalUnitCount"]
+- ["PSo16NSObjectProtocol", "uploadProgress"]
+- ["PSo16NSObjectProtocol", "uploadTask"]
+- !private ["PSo16NSObjectProtocol", "uploadTaskWithRequest"]
+- !private ["PSo16NSObjectProtocol", "uploadTaskWithStreamedRequest"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo10NSProgress", "completedUnitCount"]
+- !private ["CSo10NSProgress", "totalUnitCount"]
+- !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "UUIDString"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "setValue"]
+- !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "setValue"]
+- !private ["CSo12NSURLSession", "configuration"]
+- !private ["CSo12NSURLSession", "uploadTaskWithRequest"]
+- !private ["CSo12NSURLSession", "uploadTaskWithStreamedRequest"]
+- !private ["CSo25NSURLSessionConfiguration", "identifier"]
+- !private ["PSo24NSURLSessionDataDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["PSo24NSURLSessionDataDelegate", "URLSession"]
+- ["PSo24NSURLSessionDataDelegate", "init"]
+- !private ["PSo24NSURLSessionDataDelegate", "initialResponseTime"]
+- !private ["PSo24NSURLSessionDataDelegate", "progress"]
+- !private ["PSo24NSURLSessionDataDelegate", "subscript"]
+- !private ["PSo24NSURLSessionDataDelegate", "task"]
+- ["PSo24NSURLSessionDataDelegate", "taskDidSendBodyData"]
+- ["PSo24NSURLSessionDataDelegate", "uploadProgress"]
+- ["PSo24NSURLSessionDataDelegate", "uploadTask"]
+- ["PSo24NSURLSessionDataDelegate", ""]
+- !private ["PSo20NSURLSessionDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["PSo20NSURLSessionDelegate", "URLSession"]
+- ["PSo20NSURLSessionDelegate", "init"]
+- !private ["PSo20NSURLSessionDelegate", "initialResponseTime"]
+- !private ["PSo20NSURLSessionDelegate", "progress"]
+- !private ["PSo20NSURLSessionDelegate", "subscript"]
+- !private ["PSo20NSURLSessionDelegate", "task"]
+- ["PSo20NSURLSessionDelegate", "taskDidSendBodyData"]
+- ["PSo20NSURLSessionDelegate", "uploadProgress"]
+- ["PSo20NSURLSessionDelegate", "uploadTask"]
+- ["PSo20NSURLSessionDelegate", ""]
+- !private ["PSo28NSURLSessionDownloadDelegate", "subscript"]
+- !private ["PSo26NSURLSessionStreamDelegate", "subscript"]
+- !private ["CSo16NSURLSessionTask", "deinit"]
+- !private ["PSo24NSURLSessionTaskDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["PSo24NSURLSessionTaskDelegate", "URLSession"]
+- ["PSo24NSURLSessionTaskDelegate", "init"]
+- !private ["PSo24NSURLSessionTaskDelegate", "initialResponseTime"]
+- !private ["PSo24NSURLSessionTaskDelegate", "progress"]
+- !private ["PSo24NSURLSessionTaskDelegate", "subscript"]
+- !private ["PSo24NSURLSessionTaskDelegate", "task"]
+- ["PSo24NSURLSessionTaskDelegate", "taskDidSendBodyData"]
+- ["PSo24NSURLSessionTaskDelegate", "uploadProgress"]
+- ["PSo24NSURLSessionTaskDelegate", "uploadTask"]
+- ["PSo24NSURLSessionTaskDelegate", ""]
+- !private ["CSo6NSUUID", "UUIDString"]
+- !private ["CSo6NSUUID", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["C9Alamofire7Request", "CFAbsoluteTimeGetCurrent"]
+- ["C9Alamofire7Request", "DataTaskDelegate"]
+- ["C9Alamofire7Request", "Int64"]
+- ["C9Alamofire7Request", "NSURLSession"]
+- ["C9Alamofire7Request", "NSURLSessionTask"]
+- ["C9Alamofire7Request", "NSURLSessionUploadTask"]
+- ["C9Alamofire7Request", "UploadTaskDelegate"]
+- ["C9Alamofire7Request", "Void"]
+- !private ["C9Alamofire7Request", "delegate"]
+- !private ["C9Alamofire7Request", "init"]
+- !private ["C9Alamofire7Request", "resume"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "subscript"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["CC9Alamofire7Request12TaskDelegate", "Int64"]
+- ["CC9Alamofire7Request12TaskDelegate", "NSURLSession"]
+- ["CC9Alamofire7Request12TaskDelegate", "NSURLSessionTask"]
+- ["CC9Alamofire7Request12TaskDelegate", "NSURLSessionUploadTask"]
+- ["CC9Alamofire7Request12TaskDelegate", "URLSession"]
+- ["CC9Alamofire7Request12TaskDelegate", "Void"]
+- ["CC9Alamofire7Request12TaskDelegate", "init"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "initialResponseTime"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "progress"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "task"]
+- ["CC9Alamofire7Request12TaskDelegate", "taskDidSendBodyData"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "taskNeedNewBodyStream"]
+- ["CC9Alamofire7Request12TaskDelegate", "uploadProgress"]
+- ["CC9Alamofire7Request12TaskDelegate", "uploadTask"]
+- !private ["P9Alamofire21URLRequestConvertible", "URLRequest"]
+- !private ["P9Alamofire21URLRequestConvertible", "setValue"]
+- !private ["P9Alamofire20URLStringConvertible", "URLByAppendingPathComponent"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "setValue"]
+- !private ["CC9Alamofire7Request18UploadTaskDelegate", "CFAbsoluteTimeGetCurrent"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "Int64"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "NSURLSession"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "NSURLSessionTask"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "NSURLSessionUploadTask"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "URLSession"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "Void"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "deinit"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "init"]
+- !private ["CC9Alamofire7Request18UploadTaskDelegate", "initialResponseTime"]
+- !private ["CC9Alamofire7Request18UploadTaskDelegate", "progress"]
+- !private ["CC9Alamofire7Request18UploadTaskDelegate", "task"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "taskDidSendBodyData"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "uploadProgress"]
+- ["CC9Alamofire7Request18UploadTaskDelegate", "uploadTask"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "URLByAppendingPathComponent"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "CC9Alamofire7Request16DataTaskDelegate"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "SQ"
+- "C9Alamofire7Manager"
+- !private "C9Alamofire17MultipartFormData"
+- "OC9Alamofire7Manager31MultipartFormDataEncodingResult"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo13NSFileManager"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo10NSProgress"
+- !private "PSo14NSSecureCoding"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "CSo12NSURLSession"
+- !private "CSo25NSURLSessionConfiguration"
+- "PSo24NSURLSessionDataDelegate"
+- "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo26NSURLSessionStreamDelegate"
+- !private "CSo16NSURLSessionTask"
+- "PSo24NSURLSessionTaskDelegate"
+- !private "CSo6NSUUID"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- "C9Alamofire7Request"
+- !private "CC9Alamofire7Manager15SessionDelegate"
+- "CC9Alamofire7Request12TaskDelegate"
+- !private "P9Alamofire21URLRequestConvertible"
+- !private "P9Alamofire20URLStringConvertible"
+- "CC9Alamofire7Request18UploadTaskDelegate"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "c1853a32685ceb6b5d4427e21f29196f"

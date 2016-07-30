@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "47045ba102a75063d7bbcc7dd0a05708"
+build_time: [523191957, 511227000]
+inputs:
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Alamofire.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Download.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Error.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Manager.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/MultipartFormData.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Notifications.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/ParameterEncoding.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Request.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Response.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/ResponseSerialization.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Result.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/ServerTrustPolicy.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Stream.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Timeline.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Upload.swift": [523094081, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Alamofire/Source/Validation.swift": [523094081, 0]

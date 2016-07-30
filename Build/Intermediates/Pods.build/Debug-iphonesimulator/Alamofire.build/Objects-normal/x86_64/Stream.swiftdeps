@@ -1,0 +1,314 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "OC9Alamofire7ManagerP33_E91934A45AFE7A3A559593B1F17A05D010Streamable"
+- "CC9Alamofire7Manager15SessionDelegate"
+provides-member:
+- ["C9Alamofire7Manager", ""]
+- ["OC9Alamofire7ManagerP33_E91934A45AFE7A3A559593B1F17A05D010Streamable", ""]
+- ["CC9Alamofire7Manager15SessionDelegate", ""]
+- ["C9Alamofire7Manager", "stream"]
+- ["C9Alamofire7Manager", "stream"]
+provides-dynamic-lookup:
+- "streamTaskBetterRouteDiscovered"
+- "streamTaskDidBecomeInputStream"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "URLSession"
+- "streamTaskWriteClosed"
+- "streamTaskReadClosed"
+depends-top-level:
+- "Manager"
+- "NSURLSessionStreamDelegate"
+- "Void"
+- "Request"
+- "Int"
+- "NSNetService"
+- !private "dispatch_sync"
+- "NSOutputStream"
+- "NSURLSessionStreamTask"
+- "NSURLSession"
+- "String"
+- "NSInputStream"
+depends-member:
+- !private ["Ps9AnyObject", "NetService"]
+- !private ["Ps9AnyObject", "Request"]
+- !private ["Ps9AnyObject", "Stream"]
+- ["Ps9AnyObject", "URLSession"]
+- !private ["Ps9AnyObject", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps9AnyObject", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps9AnyObject", "_streamTaskReadClosed"]
+- !private ["Ps9AnyObject", "_streamTaskWriteClosed"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_sync"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "startRequestsImmediately"]
+- !private ["Ps9AnyObject", "stream"]
+- ["Ps9AnyObject", "streamTaskBetterRouteDiscovered"]
+- ["Ps9AnyObject", "streamTaskDidBecomeInputStream"]
+- ["Ps9AnyObject", "streamTaskReadClosed"]
+- !private ["Ps9AnyObject", "streamTaskWithHostName"]
+- !private ["Ps9AnyObject", "streamTaskWithNetService"]
+- ["Ps9AnyObject", "streamTaskWriteClosed"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "task"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "NetService"]
+- !private ["Ps11CVarArgType", "Stream"]
+- ["Ps11CVarArgType", "URLSession"]
+- !private ["Ps11CVarArgType", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps11CVarArgType", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps11CVarArgType", "_streamTaskReadClosed"]
+- !private ["Ps11CVarArgType", "_streamTaskWriteClosed"]
+- ["Ps11CVarArgType", "streamTaskBetterRouteDiscovered"]
+- ["Ps11CVarArgType", "streamTaskDidBecomeInputStream"]
+- ["Ps11CVarArgType", "streamTaskReadClosed"]
+- !private ["Ps11CVarArgType", "streamTaskWithHostName"]
+- !private ["Ps11CVarArgType", "streamTaskWithNetService"]
+- ["Ps11CVarArgType", "streamTaskWriteClosed"]
+- !private ["Ps11CVarArgType", "subscript"]
+- !private ["Ps11CVarArgType", "task"]
+- !private ["Ps28CustomDebugStringConvertible", "NetService"]
+- !private ["Ps28CustomDebugStringConvertible", "Stream"]
+- ["Ps28CustomDebugStringConvertible", "URLSession"]
+- !private ["Ps28CustomDebugStringConvertible", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps28CustomDebugStringConvertible", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps28CustomDebugStringConvertible", "_streamTaskReadClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "_streamTaskWriteClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- ["Ps28CustomDebugStringConvertible", "streamTaskBetterRouteDiscovered"]
+- ["Ps28CustomDebugStringConvertible", "streamTaskDidBecomeInputStream"]
+- ["Ps28CustomDebugStringConvertible", "streamTaskReadClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "streamTaskWithHostName"]
+- !private ["Ps28CustomDebugStringConvertible", "streamTaskWithNetService"]
+- ["Ps28CustomDebugStringConvertible", "streamTaskWriteClosed"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "task"]
+- !private ["Ps23CustomStringConvertible", "NetService"]
+- !private ["Ps23CustomStringConvertible", "Stream"]
+- ["Ps23CustomStringConvertible", "URLSession"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps23CustomStringConvertible", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps23CustomStringConvertible", "_streamTaskReadClosed"]
+- !private ["Ps23CustomStringConvertible", "_streamTaskWriteClosed"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- ["Ps23CustomStringConvertible", "streamTaskBetterRouteDiscovered"]
+- ["Ps23CustomStringConvertible", "streamTaskDidBecomeInputStream"]
+- ["Ps23CustomStringConvertible", "streamTaskReadClosed"]
+- !private ["Ps23CustomStringConvertible", "streamTaskWithHostName"]
+- !private ["Ps23CustomStringConvertible", "streamTaskWithNetService"]
+- ["Ps23CustomStringConvertible", "streamTaskWriteClosed"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "task"]
+- !private ["Ps9Equatable", "NetService"]
+- !private ["Ps9Equatable", "Stream"]
+- ["Ps9Equatable", "URLSession"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps9Equatable", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps9Equatable", "_streamTaskReadClosed"]
+- !private ["Ps9Equatable", "_streamTaskWriteClosed"]
+- ["Ps9Equatable", "streamTaskBetterRouteDiscovered"]
+- ["Ps9Equatable", "streamTaskDidBecomeInputStream"]
+- ["Ps9Equatable", "streamTaskReadClosed"]
+- !private ["Ps9Equatable", "streamTaskWithHostName"]
+- !private ["Ps9Equatable", "streamTaskWithNetService"]
+- ["Ps9Equatable", "streamTaskWriteClosed"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "task"]
+- !private ["Ps8Hashable", "NetService"]
+- !private ["Ps8Hashable", "Stream"]
+- ["Ps8Hashable", "URLSession"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_streamTaskBetterRouteDiscovered"]
+- !private ["Ps8Hashable", "_streamTaskDidBecomeInputStream"]
+- !private ["Ps8Hashable", "_streamTaskReadClosed"]
+- !private ["Ps8Hashable", "_streamTaskWriteClosed"]
+- ["Ps8Hashable", "streamTaskBetterRouteDiscovered"]
+- ["Ps8Hashable", "streamTaskDidBecomeInputStream"]
+- ["Ps8Hashable", "streamTaskReadClosed"]
+- !private ["Ps8Hashable", "streamTaskWithHostName"]
+- !private ["Ps8Hashable", "streamTaskWithNetService"]
+- ["Ps8Hashable", "streamTaskWriteClosed"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "task"]
+- !private ["SQ", "deinit"]
+- ["C9Alamofire7Manager", "Int"]
+- ["C9Alamofire7Manager", "NSNetService"]
+- !private ["C9Alamofire7Manager", "NSURLSessionStreamTask"]
+- ["C9Alamofire7Manager", "Request"]
+- ["C9Alamofire7Manager", "SessionDelegate"]
+- !private ["C9Alamofire7Manager", "Streamable"]
+- ["C9Alamofire7Manager", "String"]
+- !private ["C9Alamofire7Manager", "delegate"]
+- !private ["C9Alamofire7Manager", "dispatch_sync"]
+- !private ["C9Alamofire7Manager", "queue"]
+- !private ["C9Alamofire7Manager", "session"]
+- !private ["C9Alamofire7Manager", "startRequestsImmediately"]
+- ["C9Alamofire7Manager", "stream"]
+- !private ["CSo12NSNetService", "NetService"]
+- !private ["CSo12NSNetService", "Stream"]
+- ["CSo8NSObject", "NSInputStream"]
+- ["CSo8NSObject", "NSOutputStream"]
+- ["CSo8NSObject", "NSURLSession"]
+- ["CSo8NSObject", "NSURLSessionStreamTask"]
+- !private ["CSo8NSObject", "NetService"]
+- !private ["CSo8NSObject", "Stream"]
+- ["CSo8NSObject", "URLSession"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "_streamTaskBetterRouteDiscovered"]
+- !private ["CSo8NSObject", "_streamTaskDidBecomeInputStream"]
+- !private ["CSo8NSObject", "_streamTaskReadClosed"]
+- !private ["CSo8NSObject", "_streamTaskWriteClosed"]
+- ["CSo8NSObject", "streamTaskBetterRouteDiscovered"]
+- ["CSo8NSObject", "streamTaskDidBecomeInputStream"]
+- ["CSo8NSObject", "streamTaskReadClosed"]
+- !private ["CSo8NSObject", "streamTaskWithHostName"]
+- !private ["CSo8NSObject", "streamTaskWithNetService"]
+- ["CSo8NSObject", "streamTaskWriteClosed"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "task"]
+- !private ["PSo16NSObjectProtocol", "NetService"]
+- !private ["PSo16NSObjectProtocol", "Stream"]
+- ["PSo16NSObjectProtocol", "URLSession"]
+- !private ["PSo16NSObjectProtocol", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo16NSObjectProtocol", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo16NSObjectProtocol", "_streamTaskReadClosed"]
+- !private ["PSo16NSObjectProtocol", "_streamTaskWriteClosed"]
+- ["PSo16NSObjectProtocol", "streamTaskBetterRouteDiscovered"]
+- ["PSo16NSObjectProtocol", "streamTaskDidBecomeInputStream"]
+- ["PSo16NSObjectProtocol", "streamTaskReadClosed"]
+- !private ["PSo16NSObjectProtocol", "streamTaskWithHostName"]
+- !private ["PSo16NSObjectProtocol", "streamTaskWithNetService"]
+- ["PSo16NSObjectProtocol", "streamTaskWriteClosed"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "task"]
+- !private ["CSo12NSURLSession", "streamTaskWithHostName"]
+- !private ["CSo12NSURLSession", "streamTaskWithNetService"]
+- ["PSo24NSURLSessionDataDelegate", "URLSession"]
+- !private ["PSo24NSURLSessionDataDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo24NSURLSessionDataDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo24NSURLSessionDataDelegate", "_streamTaskReadClosed"]
+- !private ["PSo24NSURLSessionDataDelegate", "_streamTaskWriteClosed"]
+- !private ["PSo24NSURLSessionDataDelegate", "streamTaskBetterRouteDiscovered"]
+- !private ["PSo24NSURLSessionDataDelegate", "streamTaskDidBecomeInputStream"]
+- !private ["PSo24NSURLSessionDataDelegate", "streamTaskReadClosed"]
+- !private ["PSo24NSURLSessionDataDelegate", "streamTaskWriteClosed"]
+- !private ["PSo24NSURLSessionDataDelegate", "subscript"]
+- ["PSo20NSURLSessionDelegate", "URLSession"]
+- !private ["PSo20NSURLSessionDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo20NSURLSessionDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo20NSURLSessionDelegate", "_streamTaskReadClosed"]
+- !private ["PSo20NSURLSessionDelegate", "_streamTaskWriteClosed"]
+- !private ["PSo20NSURLSessionDelegate", "streamTaskBetterRouteDiscovered"]
+- !private ["PSo20NSURLSessionDelegate", "streamTaskDidBecomeInputStream"]
+- !private ["PSo20NSURLSessionDelegate", "streamTaskReadClosed"]
+- !private ["PSo20NSURLSessionDelegate", "streamTaskWriteClosed"]
+- !private ["PSo20NSURLSessionDelegate", "subscript"]
+- ["PSo28NSURLSessionDownloadDelegate", "URLSession"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "_streamTaskReadClosed"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "_streamTaskWriteClosed"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "streamTaskBetterRouteDiscovered"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "streamTaskDidBecomeInputStream"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "streamTaskReadClosed"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "streamTaskWriteClosed"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "subscript"]
+- ["PSo26NSURLSessionStreamDelegate", "URLSession"]
+- !private ["PSo26NSURLSessionStreamDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo26NSURLSessionStreamDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo26NSURLSessionStreamDelegate", "_streamTaskReadClosed"]
+- !private ["PSo26NSURLSessionStreamDelegate", "_streamTaskWriteClosed"]
+- !private ["PSo26NSURLSessionStreamDelegate", "streamTaskBetterRouteDiscovered"]
+- !private ["PSo26NSURLSessionStreamDelegate", "streamTaskDidBecomeInputStream"]
+- !private ["PSo26NSURLSessionStreamDelegate", "streamTaskReadClosed"]
+- !private ["PSo26NSURLSessionStreamDelegate", "streamTaskWriteClosed"]
+- !private ["PSo26NSURLSessionStreamDelegate", "subscript"]
+- ["PSo26NSURLSessionStreamDelegate", ""]
+- ["PSo24NSURLSessionTaskDelegate", "URLSession"]
+- !private ["PSo24NSURLSessionTaskDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["PSo24NSURLSessionTaskDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["PSo24NSURLSessionTaskDelegate", "_streamTaskReadClosed"]
+- !private ["PSo24NSURLSessionTaskDelegate", "_streamTaskWriteClosed"]
+- !private ["PSo24NSURLSessionTaskDelegate", "streamTaskBetterRouteDiscovered"]
+- !private ["PSo24NSURLSessionTaskDelegate", "streamTaskDidBecomeInputStream"]
+- !private ["PSo24NSURLSessionTaskDelegate", "streamTaskReadClosed"]
+- !private ["PSo24NSURLSessionTaskDelegate", "streamTaskWriteClosed"]
+- !private ["PSo24NSURLSessionTaskDelegate", "subscript"]
+- !private ["Sq", "deinit"]
+- !private ["C9Alamofire7Request", "delegate"]
+- !private ["C9Alamofire7Request", "init"]
+- !private ["C9Alamofire7Request", "resume"]
+- ["CC9Alamofire7Manager15SessionDelegate", "NSInputStream"]
+- ["CC9Alamofire7Manager15SessionDelegate", "NSOutputStream"]
+- ["CC9Alamofire7Manager15SessionDelegate", "NSURLSession"]
+- ["CC9Alamofire7Manager15SessionDelegate", "NSURLSessionStreamTask"]
+- ["CC9Alamofire7Manager15SessionDelegate", "URLSession"]
+- ["CC9Alamofire7Manager15SessionDelegate", "Void"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "_streamTaskBetterRouteDiscovered"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "_streamTaskDidBecomeInputStream"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "_streamTaskReadClosed"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "_streamTaskWriteClosed"]
+- ["CC9Alamofire7Manager15SessionDelegate", "deinit"]
+- ["CC9Alamofire7Manager15SessionDelegate", "streamTaskBetterRouteDiscovered"]
+- ["CC9Alamofire7Manager15SessionDelegate", "streamTaskDidBecomeInputStream"]
+- ["CC9Alamofire7Manager15SessionDelegate", "streamTaskReadClosed"]
+- ["CC9Alamofire7Manager15SessionDelegate", "streamTaskWriteClosed"]
+- !private ["CC9Alamofire7Manager15SessionDelegate", "subscript"]
+- !private ["CC9Alamofire7Request12TaskDelegate", "task"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "SQ"
+- "C9Alamofire7Manager"
+- !private "CSo12NSNetService"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo12NSURLSession"
+- "PSo24NSURLSessionDataDelegate"
+- "PSo20NSURLSessionDelegate"
+- "PSo28NSURLSessionDownloadDelegate"
+- "PSo26NSURLSessionStreamDelegate"
+- "PSo24NSURLSessionTaskDelegate"
+- !private "Sq"
+- !private "C9Alamofire7Request"
+- "CC9Alamofire7Manager15SessionDelegate"
+- !private "CC9Alamofire7Request12TaskDelegate"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "5feb4fb6d9b8445774d6770c727d22ea"

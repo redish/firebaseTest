@@ -7,13 +7,19 @@
 //
 
 import UIKit
-import Firebase
 
 // 定義.
 let FIREBASE_LIMIT:UInt = 10
+let MAX_ROOM_LIMIT:UInt = 30
+let DOMAIN:String = "http://127.0.0.1:3000"
+
+// この値はサーバの初期化で変更されるので、注意.
+let USER_TOKEN = "cd1548e602215db12994eda3eca958bc5288928d3c5b2edb6aaac527946a246c"
 
 // グローバル定義.
 let redishFirebase:FirebaseByRedishUserApps = FirebaseByRedishUserApps()
+let redishFirebaseRoomCache:FirebaseRoomCache = FirebaseRoomCache()
+let redishCustomToken:RedishCustomAuth = RedishCustomAuth()
 
 var userId:Int = 1
 var merchantUserId:Int = -1
@@ -26,6 +32,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*
+        redishCustomToken.initFireAuth()
+        
+        // カスタムトークン実施.
+        redishCustomToken.login(DOMAIN, redishUserToken: USER_TOKEN, callback: { resultFlag,result in
+            // カスタムトークン認証が成功した場合.
+            if resultFlag == true {
+                
+                // 生成＋ユーザ情報の監視.
+                redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
+                    if let values = snapshot.value as? NSDictionary {
+                        redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
+                    }
+                })
+            }
+            else {
+                debugPrint( "アクセストークンのアクセスに失敗:\(result)")
+            }
+        })
+ */
+        
+        // 生成＋ユーザ情報の監視.
+        redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
+            if let values = snapshot.value as? NSDictionary {
+                redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
+            }
+        })
         return true
     }
 

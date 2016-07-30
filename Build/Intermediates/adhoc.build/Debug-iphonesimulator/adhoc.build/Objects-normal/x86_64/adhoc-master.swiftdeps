@@ -1,8 +1,9 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "6377b1442e5026d06e943ac33a322827"
-build_time: [521724449, 540088000]
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "41573bbe64182402fd5b5bd98d020783"
+build_time: [523191963, 48499000]
 inputs:
-  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/RedishFirebase.swift": [521724440, 0]
-  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/AppDelegate.swift": [521631948, 0]
-  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/TopPageViewController.swift": [521697165, 0]
-  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/ChatViewController.swift": [521639334, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/RedishFirebase.swift": [523191948, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/RedishCustomAuth.swift": [523177390, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/TopPageViewController.swift": [523168079, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/ChatViewController.swift": [523103862, 0]
+  "/Users/maachang/project/swift/redishUser2Adhk/adhoc/adhoc/AppDelegate.swift": [523191549, 0]

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E686D941D49F7D4007CD3BA /* RedishCustomAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E686D931D49F7D4007CD3BA /* RedishCustomAuth.swift */; };
 		0EE3BA8C1D33A30B008888A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE3BA8B1D33A30B008888A1 /* AppDelegate.swift */; };
 		0EE3BA911D33A30B008888A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE3BA8F1D33A30B008888A1 /* Main.storyboard */; };
 		0EE3BA931D33A30B008888A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE3BA921D33A30B008888A1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		0EEAF79F1D34EBAF00DEF49F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAF79E1D34EBAF00DEF49F /* ChatViewController.swift */; };
 		65AC8E2F0656DED739D01F99 /* Pods_adhocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB714D4C03BC66FFFD52F161 /* Pods_adhocUITests.framework */; };
 		CF659D611C0592F5D14B909B /* Pods_adhocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C2C5BD1EBE3C74ADA94AC7 /* Pods_adhocTests.framework */; };
+		D1F823B8B92602054C94D740 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E83F028491F7CCC8971B1D1 /* Pods.framework */; };
 		E0DC2320F0EFF7C4CF44EE37 /* Pods_adhoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9F2A439E0EB171A355F08F /* Pods_adhoc.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0A680BBBDCF509D026B0C6C7 /* Pods-adhoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adhoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-adhoc/Pods-adhoc.release.xcconfig"; sourceTree = "<group>"; };
+		0E686D931D49F7D4007CD3BA /* RedishCustomAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedishCustomAuth.swift; sourceTree = "<group>"; };
 		0EE3BA881D33A30B008888A1 /* adhoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adhoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE3BA8B1D33A30B008888A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE3BA901D33A30B008888A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		0EEAF79C1D34EB9300DEF49F /* TopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		0EEAF79E1D34EBAF00DEF49F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		14C2C5BD1EBE3C74ADA94AC7 /* Pods_adhocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adhocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E83F028491F7CCC8971B1D1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E86012F2D69D64AC50CF8DD /* Pods-adhocUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adhocUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-adhocUITests/Pods-adhocUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54112DA1107FC7B09930F666 /* Pods-adhocUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adhocUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-adhocUITests/Pods-adhocUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A01E474436E74524627FB49A /* Pods-adhocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adhocTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-adhocTests/Pods-adhocTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DC2320F0EFF7C4CF44EE37 /* Pods_adhoc.framework in Frameworks */,
+				D1F823B8B92602054C94D740 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,7 @@
 				0EEAF7961D34835300DEF49F /* RedishFirebase.swift */,
 				0EEAF79C1D34EB9300DEF49F /* TopPageViewController.swift */,
 				0EEAF79E1D34EBAF00DEF49F /* ChatViewController.swift */,
+				0E686D931D49F7D4007CD3BA /* RedishCustomAuth.swift */,
 			);
 			path = adhoc;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 				EE9F2A439E0EB171A355F08F /* Pods_adhoc.framework */,
 				14C2C5BD1EBE3C74ADA94AC7 /* Pods_adhocTests.framework */,
 				BB714D4C03BC66FFFD52F161 /* Pods_adhocUITests.framework */,
+				1E83F028491F7CCC8971B1D1 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,12 +189,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EE3BAB01D33A30B008888A1 /* Build configuration list for PBXNativeTarget "adhoc" */;
 			buildPhases = (
+				8A26A131670EBBA1DB9080EF /* Check Pods Manifest.lock */,
 				3E66B4149C3AD3F284CD43C2 /* [CP] Check Pods Manifest.lock */,
 				0EE3BA841D33A30B008888A1 /* Sources */,
 				0EE3BA851D33A30B008888A1 /* Frameworks */,
 				0EE3BA861D33A30B008888A1 /* Resources */,
 				211F21BAE330783EDC8613A0 /* [CP] Embed Pods Frameworks */,
 				FA53383E6B3BF1D493F31349 /* [CP] Copy Pods Resources */,
+				5A08E4F6CBFEB2632D9F0039 /* Embed Pods Frameworks */,
+				533172FEF567FD37876D33FE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,6 +366,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		533172FEF567FD37876D33FE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A08E4F6CBFEB2632D9F0039 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		66DDD130E82C70E332981954 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +424,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-adhocUITests/Pods-adhocUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A26A131670EBBA1DB9080EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E07A231C8ED0C8393C462477 /* [CP] Copy Pods Resources */ = {
@@ -439,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEAF7971D34835300DEF49F /* RedishFirebase.swift in Sources */,
+				0E686D941D49F7D4007CD3BA /* RedishCustomAuth.swift in Sources */,
 				0EEAF79D1D34EB9300DEF49F /* TopPageViewController.swift in Sources */,
 				0EEAF79F1D34EBAF00DEF49F /* ChatViewController.swift in Sources */,
 				0EE3BA8C1D33A30B008888A1 /* AppDelegate.swift in Sources */,
@@ -664,7 +720,7 @@
 				0EE3BAAF1D33A30B008888A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0EE3BAB01D33A30B008888A1 /* Build configuration list for PBXNativeTarget "adhoc" */ = {
 			isa = XCConfigurationList;
@@ -673,7 +729,7 @@
 				0EE3BAB21D33A30B008888A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0EE3BAB31D33A30B008888A1 /* Build configuration list for PBXNativeTarget "adhocTests" */ = {
 			isa = XCConfigurationList;
@@ -682,7 +738,7 @@
 				0EE3BAB51D33A30B008888A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0EE3BAB61D33A30B008888A1 /* Build configuration list for PBXNativeTarget "adhocUITests" */ = {
 			isa = XCConfigurationList;
@@ -691,7 +747,7 @@
 				0EE3BAB81D33A30B008888A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
