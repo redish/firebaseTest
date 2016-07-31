@@ -11,17 +11,17 @@ provides-member:
 - ["VV9Alamofire5Error12UserInfoKeys", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "IntegerLiteralType"
-- "=="
-- !private "~="
-- "StringLiteralType"
-- "Int"
-- "Error"
-- !private "NSLocalizedFailureReasonErrorKey"
-- "NSError"
-- "String"
 - "FloatLiteralType"
 - !private "Dictionary"
+- "String"
+- "IntegerLiteralType"
+- !private "~="
+- "NSError"
+- "=="
+- "StringLiteralType"
+- !private "NSLocalizedFailureReasonErrorKey"
+- "Int"
+- "Error"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]

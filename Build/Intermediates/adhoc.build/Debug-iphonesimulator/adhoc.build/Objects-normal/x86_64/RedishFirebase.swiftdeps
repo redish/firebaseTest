@@ -13,44 +13,43 @@ provides-member:
 - ["C5adhoc24FirebaseByRedishUserApps", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "FirebaseByRedishUserApps"
-- "BooleanLiteralType"
-- !private "FIRDatabaseReference"
-- "FloatLiteralType"
-- !private "UnicodeScalarType"
-- "AnyObject"
-- !private "objc_sync_enter"
-- "RedishFirebaseElement"
-- "FirebaseRoomCache"
-- !private "+"
-- !private "++"
-- !private "FIRDatabase"
-- !private ">"
-- !private "FIRApp"
-- !private "FIRDatabaseHandle"
-- !private "||"
-- !private "!="
+- "FIRDataSnapshot"
+- "Dictionary"
+- !private "<"
 - !private "CORE"
 - "Void"
-- !private "<"
+- !private "FIRDatabaseHandle"
 - !private "FIRMutableData"
 - !private "NSNull"
-- "Dictionary"
-- "AutoSync"
-- "String"
-- !private "FIRTransactionResult"
-- "Array"
 - "Int"
-- "IntegerLiteralType"
-- "NSDictionary"
-- "Bool"
-- "StringLiteralType"
-- !private "=="
-- !private "objc_sync_exit"
-- "FIRDataSnapshot"
+- "RedishFirebaseElement"
+- !private "FIRDatabaseReference"
+- "FloatLiteralType"
+- !private "FIRDatabase"
+- "BooleanLiteralType"
+- !private "objc_sync_enter"
+- !private "UnicodeScalarType"
+- !private "+"
+- !private "FIRTransactionResult"
+- !private "||"
+- "AutoSync"
+- !private "!="
+- !private ">"
 - !private "NSDate"
-- "UInt"
+- "AnyObject"
+- "FirebaseRoomCache"
+- !private "objc_sync_exit"
 - "RedishFirebaseCore"
+- !private "=="
+- "FirebaseByRedishUserApps"
+- "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- !private "++"
+- "Array"
+- "UInt"
+- "Bool"
+- "NSDictionary"
 depends-member:
 - !private ["Ps9AnyObject", "AnyObject"]
 - ["Ps9AnyObject", "Array"]
@@ -58,7 +57,6 @@ depends-member:
 - !private ["Ps9AnyObject", "CORE"]
 - !private ["Ps9AnyObject", "Dictionary"]
 - !private ["Ps9AnyObject", "Element"]
-- !private ["Ps9AnyObject", "FIRApp"]
 - !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "FIRTransactionResult"]
 - !private ["Ps9AnyObject", "Generator"]
@@ -74,7 +72,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cache"]
 - !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "childByAutoId"]
-- !private ["Ps9AnyObject", "configure"]
 - !private ["Ps9AnyObject", "createElement"]
 - !private ["Ps9AnyObject", "createFlag"]
 - !private ["Ps9AnyObject", "createReference"]
@@ -166,7 +163,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "Stride"]
 - !private ["Ps11CVarArgType", "child"]
 - !private ["Ps11CVarArgType", "childByAutoId"]
-- !private ["Ps11CVarArgType", "configure"]
 - !private ["Ps11CVarArgType", "database"]
 - !private ["Ps11CVarArgType", "hasChildren"]
 - !private ["Ps11CVarArgType", "init"]
@@ -207,7 +203,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "childByAutoId"]
-- !private ["Ps28CustomDebugStringConvertible", "configure"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChildren"]
@@ -238,7 +233,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "childByAutoId"]
-- !private ["Ps23CustomStringConvertible", "configure"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "hasChildren"]
@@ -289,7 +283,6 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "childByAutoId"]
-- !private ["Ps9Equatable", "configure"]
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "hasChildren"]
 - !private ["Ps9Equatable", "init"]
@@ -303,7 +296,6 @@ depends-member:
 - !private ["Ps9Equatable", "timeIntervalSince1970"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["CSo6FIRApp", "configure"]
 - !private ["OSC16FIRDataEventType", "ChildAdded"]
 - !private ["OSC16FIRDataEventType", "ChildChanged"]
 - !private ["OSC16FIRDataEventType", "Value"]
@@ -394,7 +386,6 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "childByAutoId"]
-- !private ["Ps8Hashable", "configure"]
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "hasChildren"]
 - !private ["Ps8Hashable", "init"]
@@ -502,7 +493,6 @@ depends-member:
 - !private ["CSo8NSObject", "Generator"]
 - !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "childByAutoId"]
-- !private ["CSo8NSObject", "configure"]
 - !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "hasChildren"]
@@ -519,7 +509,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Generator"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "childByAutoId"]
-- !private ["PSo16NSObjectProtocol", "configure"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "hasChildren"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -716,7 +705,6 @@ depends-nominal:
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "CSo6FIRApp"
 - !private "OSC16FIRDataEventType"
 - !private "CSo15FIRDataSnapshot"
 - !private "CSo11FIRDatabase"
@@ -856,6 +844,17 @@ depends-external:
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"

@@ -48,7 +48,6 @@ private class RedishFirebaseCore {
         if( initFlag ) {
             return
         }
-        FIRApp.configure()
         rootRef = FIRDatabase.database().reference()
         initFlag = true
     }

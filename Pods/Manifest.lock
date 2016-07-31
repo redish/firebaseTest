@@ -41,6 +41,7 @@ DEPENDENCIES:
   - Alamofire
   - Firebase
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Database
   - SwiftyJSON
 

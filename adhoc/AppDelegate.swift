@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseAnalytics
 
 // 定義.
 let FIREBASE_LIMIT:UInt = 10
@@ -29,37 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        /*
+        // Override point for customization after application launch
         redishCustomToken.initFireAuth()
-        
-        // カスタムトークン実施.
-        redishCustomToken.login(DOMAIN, redishUserToken: USER_TOKEN, callback: { resultFlag,result in
-            // カスタムトークン認証が成功した場合.
-            if resultFlag == true {
-                
-                // 生成＋ユーザ情報の監視.
-                redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
-                    if let values = snapshot.value as? NSDictionary {
-                        redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
-                    }
-                })
-            }
-            else {
-                debugPrint( "アクセストークンのアクセスに失敗:\(result)")
-            }
-        })
- */
-        
-        // 生成＋ユーザ情報の監視.
-        redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
-            if let values = snapshot.value as? NSDictionary {
-                redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
-            }
-        })
+        createFirebaseChat()
         return true
     }
 
@@ -85,6 +61,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    private func createFirebaseChat() {
+        
+        
+        // カスタムトークン実施.
+        redishCustomToken.login(DOMAIN, redishUserToken: USER_TOKEN, callback: { resultFlag,result in
+            // カスタムトークン認証が成功した場合.
+            if resultFlag == true {
+                
+                // 生成＋ユーザ情報の監視.
+                redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
+                    if let values = snapshot.value as? NSDictionary {
+                        redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
+                    }
+                })
+            }
+            else {
+                debugPrint( "アクセストークンのアクセスに失敗:\(result)")
+            }
+        })
+ 
+        
+        /*
+         // 生成＋ユーザ情報の監視.
+         redishFirebase.create( userId,limit:MAX_ROOM_LIMIT,call: { snapshot in
+            if let values = snapshot.value as? NSDictionary {
+                redishFirebaseRoomCache.update(Int(MAX_ROOM_LIMIT), values: values)
+            }
+         })
+ */
+        
+    }
 }
 

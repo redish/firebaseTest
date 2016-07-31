@@ -8,6 +8,7 @@
 import Foundation
 import Firebase
 import FirebaseAuth
+import FirebaseAnalytics
 import SwiftyJSON
 
 // Firebaseカスタム認証処理用.
@@ -104,7 +105,8 @@ class RedishCustomAuth {
         httpGet("\(domain)\(BASE_PATH)", params: nil, headers: [REDISH_USER_TOKEN,redishUserToken], callback: {resType, response in
             let json = JSON(data: response.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!)
             if let token = json["token"].string {
-                FIRAuth.auth()?.signInWithCustomToken("\(token as String)") { (user, error) in
+                FIRAuth.auth()?.signInWithCustomToken(token) { (user, error) in
+                    debugPrint( "######### \(user)\n\(error)")
                     if error != nil {
                         callback(false, "Firebaseカスタム認証に失敗しました")
                         return

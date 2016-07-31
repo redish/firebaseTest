@@ -15,43 +15,47 @@ provides-nominal:
 provides-member:
 - ["C5adhoc11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "applicationDidBecomeActive"
-- "applicationDidEnterBackground"
-- "window"
 - "applicationWillResignActive"
+- "window"
 - "applicationWillTerminate"
 - "application"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "AppDelegate"
-- "MAX_ROOM_LIMIT"
-- "redishFirebase"
-- "NSObject"
-- "UIWindow"
-- "RedishCustomAuth"
-- "AnyObject"
-- "UInt"
-- "Int"
-- "merchantUserId"
-- !private "NSDictionary"
-- "DOMAIN"
-- "UIApplication"
-- "UIApplicationDelegate"
-- !private "BooleanLiteralType"
-- "UIResponder"
-- "FirebaseRoomCache"
-- "redishFirebaseRoomCache"
-- "FirebaseByRedishUserApps"
-- "Bool"
 - "String"
+- "FirebaseByRedishUserApps"
+- "AnyObject"
+- "UIResponder"
+- !private "NSDictionary"
+- !private "BooleanLiteralType"
+- !private "debugPrint"
+- "DOMAIN"
+- "redishFirebase"
+- "Bool"
+- "redishFirebaseRoomCache"
+- "UIApplicationDelegate"
+- "userId"
+- "UIWindow"
 - "FIREBASE_LIMIT"
 - "StringLiteralType"
-- "userId"
 - "USER_TOKEN"
+- "Int"
 - "redishCustomToken"
+- "MAX_ROOM_LIMIT"
+- "NSObject"
+- "UInt"
+- "FirebaseRoomCache"
+- "merchantUserId"
+- "AppDelegate"
+- "UIApplication"
+- !private "=="
+- "RedishCustomAuth"
 depends-member:
+- !private ["Ps9AnyObject", "DOMAIN"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "MAX_ROOM_LIMIT"]
+- !private ["Ps9AnyObject", "USER_TOKEN"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -65,7 +69,13 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "create"]
+- ["Ps9AnyObject", "createFirebaseChat"]
+- !private ["Ps9AnyObject", "debugPrint"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initFireAuth"]
+- !private ["Ps9AnyObject", "login"]
+- !private ["Ps9AnyObject", "logout"]
+- !private ["Ps9AnyObject", "redishCustomToken"]
 - !private ["Ps9AnyObject", "redishFirebase"]
 - !private ["Ps9AnyObject", "redishFirebaseRoomCache"]
 - !private ["Ps9AnyObject", "update"]
@@ -75,12 +85,14 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - ["C5adhoc11AppDelegate", "AnyObject"]
 - ["C5adhoc11AppDelegate", "Bool"]
+- !private ["C5adhoc11AppDelegate", "DOMAIN"]
 - !private ["C5adhoc11AppDelegate", "Int"]
 - !private ["C5adhoc11AppDelegate", "MAX_ROOM_LIMIT"]
 - !private ["C5adhoc11AppDelegate", "NSDictionary"]
 - ["C5adhoc11AppDelegate", "NSObject"]
 - ["C5adhoc11AppDelegate", "UIApplication"]
 - ["C5adhoc11AppDelegate", "UIWindow"]
+- !private ["C5adhoc11AppDelegate", "USER_TOKEN"]
 - ["C5adhoc11AppDelegate", "application"]
 - ["C5adhoc11AppDelegate", "applicationDidBecomeActive"]
 - ["C5adhoc11AppDelegate", "applicationDidEnterBackground"]
@@ -93,16 +105,25 @@ depends-member:
 - ["C5adhoc11AppDelegate", "applicationWillEnterForeground"]
 - ["C5adhoc11AppDelegate", "applicationWillResignActive"]
 - ["C5adhoc11AppDelegate", "applicationWillTerminate"]
+- !private ["C5adhoc11AppDelegate", "createFirebaseChat"]
+- !private ["C5adhoc11AppDelegate", "debugPrint"]
 - ["C5adhoc11AppDelegate", "deinit"]
 - ["C5adhoc11AppDelegate", "init"]
+- !private ["C5adhoc11AppDelegate", "redishCustomToken"]
 - !private ["C5adhoc11AppDelegate", "redishFirebase"]
 - !private ["C5adhoc11AppDelegate", "redishFirebaseRoomCache"]
 - !private ["C5adhoc11AppDelegate", "userId"]
 - ["C5adhoc11AppDelegate", "window"]
 - !private ["Ps22BidirectionalIndexType", "init"]
 - !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "DOMAIN"]
 - !private ["Ps11CVarArgType", "Int"]
 - !private ["Ps11CVarArgType", "MAX_ROOM_LIMIT"]
+- !private ["Ps11CVarArgType", "USER_TOKEN"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -115,17 +136,23 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillEnterForeground"]
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
+- ["Ps11CVarArgType", "createFirebaseChat"]
+- !private ["Ps11CVarArgType", "debugPrint"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "redishCustomToken"]
 - !private ["Ps11CVarArgType", "redishFirebase"]
 - !private ["Ps11CVarArgType", "redishFirebaseRoomCache"]
 - !private ["Ps11CVarArgType", "userId"]
 - !private ["Ps11CVarArgType", "value"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DOMAIN"]
 - !private ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "MAX_ROOM_LIMIT"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "USER_TOKEN"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -138,15 +165,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- ["Ps28CustomDebugStringConvertible", "createFirebaseChat"]
+- !private ["Ps28CustomDebugStringConvertible", "debugPrint"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "redishCustomToken"]
 - !private ["Ps28CustomDebugStringConvertible", "redishFirebase"]
 - !private ["Ps28CustomDebugStringConvertible", "redishFirebaseRoomCache"]
 - !private ["Ps28CustomDebugStringConvertible", "userId"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "DOMAIN"]
 - !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "MAX_ROOM_LIMIT"]
+- !private ["Ps23CustomStringConvertible", "USER_TOKEN"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -159,15 +192,22 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- ["Ps23CustomStringConvertible", "createFirebaseChat"]
+- !private ["Ps23CustomStringConvertible", "debugPrint"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "redishCustomToken"]
 - !private ["Ps23CustomStringConvertible", "redishFirebase"]
 - !private ["Ps23CustomStringConvertible", "redishFirebaseRoomCache"]
 - !private ["Ps23CustomStringConvertible", "userId"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "DOMAIN"]
 - !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "MAX_ROOM_LIMIT"]
+- !private ["Ps9Equatable", "USER_TOKEN"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -180,21 +220,29 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- ["Ps9Equatable", "createFirebaseChat"]
+- !private ["Ps9Equatable", "debugPrint"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "redishCustomToken"]
 - !private ["Ps9Equatable", "redishFirebase"]
 - !private ["Ps9Equatable", "redishFirebaseRoomCache"]
 - !private ["Ps9Equatable", "userId"]
 - !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo15FIRDataSnapshot", "value"]
 - !private ["C5adhoc24FirebaseByRedishUserApps", "create"]
 - ["C5adhoc24FirebaseByRedishUserApps", "init"]
 - ["C5adhoc17FirebaseRoomCache", "init"]
 - !private ["C5adhoc17FirebaseRoomCache", "update"]
+- !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps8Hashable", "DOMAIN"]
 - !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "MAX_ROOM_LIMIT"]
+- !private ["Ps8Hashable", "USER_TOKEN"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -207,27 +255,40 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- ["Ps8Hashable", "createFirebaseChat"]
+- !private ["Ps8Hashable", "debugPrint"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "redishCustomToken"]
 - !private ["Ps8Hashable", "redishFirebase"]
 - !private ["Ps8Hashable", "redishFirebaseRoomCache"]
 - !private ["Ps8Hashable", "userId"]
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
 - !private ["Si", "init"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "init"]
 - !private ["P10SwiftyJSON17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "DOMAIN"]
 - !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "MAX_ROOM_LIMIT"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
+- !private ["CSo8NSObject", "USER_TOKEN"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -240,14 +301,19 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "createFirebaseChat"]
+- !private ["CSo8NSObject", "debugPrint"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "redishCustomToken"]
 - !private ["CSo8NSObject", "redishFirebase"]
 - !private ["CSo8NSObject", "redishFirebaseRoomCache"]
 - !private ["CSo8NSObject", "userId"]
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "DOMAIN"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "MAX_ROOM_LIMIT"]
+- !private ["PSo16NSObjectProtocol", "USER_TOKEN"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -260,23 +326,39 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- ["PSo16NSObjectProtocol", "createFirebaseChat"]
+- !private ["PSo16NSObjectProtocol", "debugPrint"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "redishCustomToken"]
 - !private ["PSo16NSObjectProtocol", "redishFirebase"]
 - !private ["PSo16NSObjectProtocol", "redishFirebaseRoomCache"]
 - !private ["PSo16NSObjectProtocol", "userId"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "init"]
 - ["C5adhoc16RedishCustomAuth", "init"]
+- !private ["C5adhoc16RedishCustomAuth", "initFireAuth"]
+- !private ["C5adhoc16RedishCustomAuth", "login"]
+- !private ["C5adhoc16RedishCustomAuth", "logout"]
 - !private ["Ps17SignedIntegerType", "init"]
 - !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo21UIApplicationDelegate", "DOMAIN"]
 - !private ["PSo21UIApplicationDelegate", "Int"]
 - !private ["PSo21UIApplicationDelegate", "MAX_ROOM_LIMIT"]
+- !private ["PSo21UIApplicationDelegate", "USER_TOKEN"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -289,6 +371,9 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "createFirebaseChat"]
+- !private ["PSo21UIApplicationDelegate", "debugPrint"]
+- !private ["PSo21UIApplicationDelegate", "redishCustomToken"]
 - !private ["PSo21UIApplicationDelegate", "redishFirebase"]
 - !private ["PSo21UIApplicationDelegate", "redishFirebaseRoomCache"]
 - !private ["PSo21UIApplicationDelegate", "userId"]
@@ -296,12 +381,14 @@ depends-member:
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "DOMAIN"]
 - !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "MAX_ROOM_LIMIT"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
+- !private ["CSo11UIResponder", "USER_TOKEN"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -314,19 +401,36 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillEnterForeground"]
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "createFirebaseChat"]
+- !private ["CSo11UIResponder", "debugPrint"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "redishCustomToken"]
 - !private ["CSo11UIResponder", "redishFirebase"]
 - !private ["CSo11UIResponder", "redishFirebaseRoomCache"]
 - !private ["CSo11UIResponder", "userId"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "init"]
 - !private ["Ps22_IntegerArithmeticType", "init"]
 - !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps22_RandomAccessAmbiguity", "init"]
 - !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
@@ -334,34 +438,67 @@ depends-nominal:
 - "C5adhoc11AppDelegate"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "CSo15FIRDataSnapshot"
 - "C5adhoc24FirebaseByRedishUserApps"
 - "C5adhoc17FirebaseRoomCache"
+- !private "Sf"
 - !private "Ps16ForwardIndexType"
 - "Ps8Hashable"
 - !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
 - !private "P10SwiftyJSON17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Ps21NilLiteralConvertible"
 - !private "Sq"
+- !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - "C5adhoc16RedishCustomAuth"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
 - !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
 - !private "Ps12_IntegerType"
@@ -425,8 +562,19 @@ depends-external:
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
 - "/Users/maachang/project/swift/redishUser2Adhk/adhoc/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/Modules/module.modulemap"
-interface-hash: "89cd71a7fb8519501c793c167b7db580"
+interface-hash: "4250a39b58fa25a89a2a09a0cc8cd049"
