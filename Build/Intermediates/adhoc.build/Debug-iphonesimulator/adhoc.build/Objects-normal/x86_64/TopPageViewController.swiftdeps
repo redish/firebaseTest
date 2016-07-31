@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C5adhoc21TopPageViewController", ""]
 provides-dynamic-lookup:
-- "room2_u1_mu2"
 - "room2_u1_mu2_down"
-- "room1_u1_mu1_down"
+- "room2_u1_mu2"
 - "viewDidLoad"
-- "room2_lavel"
-- "room1_u1_mu1"
 - "room1_label"
+- "room1_u1_mu1"
+- "room2_lavel"
+- "room1_u1_mu1_down"
 depends-top-level:
+- !private "merchantUserId"
+- !private "StringLiteralType"
+- "UIButton"
 - "UILabel"
 - "TopPageViewController"
 - "UIViewController"
-- !private "StringLiteralType"
-- !private "redishFirebaseRoomCache"
-- !private "redishFirebase"
 - !private "!="
 - "AnyObject"
-- "UIButton"
-- !private "merchantUserId"
+- !private "redishFirebase"
+- !private "redishFirebaseRoomCache"
 depends-member:
 - !private ["Ps9AnyObject", "createRoom"]
 - !private ["Ps9AnyObject", "description"]

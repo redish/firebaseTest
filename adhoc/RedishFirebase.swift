@@ -444,4 +444,13 @@ class FirebaseByRedishUserApps {
     }
 }
 
-
+// FireAuth初期化処理.
+// かならず1度だけ呼び出す必要がある.
+private var initFirebaseFlag:Bool = false
+func initFirebase() {
+    _ = AutoSync( initFirebaseFlag ) ;
+    if !initFirebaseFlag {
+        FIRApp.configure()
+        initFirebaseFlag = true
+    }
+}

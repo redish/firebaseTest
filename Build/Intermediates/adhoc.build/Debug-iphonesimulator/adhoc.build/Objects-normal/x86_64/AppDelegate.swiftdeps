@@ -15,42 +15,42 @@ provides-nominal:
 provides-member:
 - ["C5adhoc11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
 - "window"
+- "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
 - "applicationWillTerminate"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
 depends-top-level:
-- "String"
-- "FirebaseByRedishUserApps"
-- "AnyObject"
-- "UIResponder"
-- !private "NSDictionary"
-- !private "BooleanLiteralType"
-- !private "debugPrint"
-- "DOMAIN"
-- "redishFirebase"
 - "Bool"
-- "redishFirebaseRoomCache"
-- "UIApplicationDelegate"
-- "userId"
-- "UIWindow"
-- "FIREBASE_LIMIT"
-- "StringLiteralType"
-- "USER_TOKEN"
-- "Int"
-- "redishCustomToken"
-- "MAX_ROOM_LIMIT"
-- "NSObject"
-- "UInt"
-- "FirebaseRoomCache"
-- "merchantUserId"
-- "AppDelegate"
-- "UIApplication"
 - !private "=="
+- "userId"
+- "NSObject"
+- "UIWindow"
+- "Int"
+- "UIApplicationDelegate"
+- "FirebaseRoomCache"
+- "AnyObject"
+- "UInt"
+- "DOMAIN"
+- "FirebaseByRedishUserApps"
+- "UIResponder"
+- "StringLiteralType"
+- "redishFirebase"
+- "MAX_ROOM_LIMIT"
+- "merchantUserId"
+- "redishFirebaseRoomCache"
+- "AppDelegate"
 - "RedishCustomAuth"
+- !private "NSDictionary"
+- "UIApplication"
+- !private "debugPrint"
+- "FIREBASE_LIMIT"
+- "USER_TOKEN"
+- !private "BooleanLiteralType"
+- "String"
+- "redishCustomToken"
 depends-member:
 - !private ["Ps9AnyObject", "DOMAIN"]
 - !private ["Ps9AnyObject", "Int"]
@@ -74,7 +74,6 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initFireAuth"]
 - !private ["Ps9AnyObject", "login"]
-- !private ["Ps9AnyObject", "logout"]
 - !private ["Ps9AnyObject", "redishCustomToken"]
 - !private ["Ps9AnyObject", "redishFirebase"]
 - !private ["Ps9AnyObject", "redishFirebaseRoomCache"]
@@ -347,7 +346,6 @@ depends-member:
 - ["C5adhoc16RedishCustomAuth", "init"]
 - !private ["C5adhoc16RedishCustomAuth", "initFireAuth"]
 - !private ["C5adhoc16RedishCustomAuth", "login"]
-- !private ["C5adhoc16RedishCustomAuth", "logout"]
 - !private ["Ps17SignedIntegerType", "init"]
 - !private ["Ps16SignedNumberType", "init"]
 - !private ["Ps10Streamable", "init"]

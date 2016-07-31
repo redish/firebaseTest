@@ -14,18 +14,7 @@ import SwiftyJSON
 // Firebaseカスタム認証処理用.
 class RedishCustomAuth {
     private let DEFAULT_USER_AGENT = "redish-user-app"
-    private var initFireAuthFlag:Bool = false
     private var authFlag:Bool = false
-    
-    // FireAuth初期化処理.
-    // かならず1度だけ呼び出す必要がある.
-    func initFireAuth() {
-        _ = AutoSync( self ) ;
-        if !initFireAuthFlag {
-            FIRApp.configure()
-            initFireAuthFlag = true
-        }
-    }
     
     // indexOf.
     private func indexOf( a:String,n:String ) -> Int {
